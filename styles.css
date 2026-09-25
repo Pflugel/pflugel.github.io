@@ -6110,3 +6110,70 @@ video {
 .recovery-detail-single {
   grid-template-columns: 1fr;
 }
+
+
+/* =========================================================
+   V26.3.3 — SITE SHARE BUTTON
+   ========================================================= */
+
+.site-share-button {
+  min-height: 40px;
+  padding: 9px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid rgba(24,120,201,.16);
+  border-radius: 11px;
+  color: #456f89;
+  background: rgba(240,248,253,.82);
+  font: inherit;
+  font-size: .86rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    color .18s ease,
+    background .18s ease,
+    border-color .18s ease,
+    transform .18s ease;
+}
+
+.site-share-button svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.site-share-button:hover {
+  color: var(--blue-deep);
+  border-color: rgba(24,120,201,.28);
+  background: #e9f5fc;
+  transform: translateY(-1px);
+}
+
+.site-share-button:focus-visible {
+  outline: 3px solid rgba(75,155,208,.22);
+  outline-offset: 2px;
+}
+
+@media (max-width: 1020px) {
+  .site-share-button {
+    width: 100%;
+    min-height: 44px;
+    justify-content: flex-start;
+    padding: 10px 11px;
+    border-color: transparent;
+    background: transparent;
+    border-radius: 10px;
+    color: #3f5d73;
+  }
+
+  .site-share-button:hover {
+    background: #eef7fd;
+    transform: none;
+  }
+}

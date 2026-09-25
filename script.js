@@ -837,3 +837,93 @@ document.querySelectorAll('[data-track-form]').forEach(form => {
     });
   });
 });
+
+
+// ======================================================
+// V26.3.3 — SITE SHARE BUTTON
+// Adds one Share control to the existing navigation on every page.
+// Uses the device's native share sheet when available.
+// Falls back to copying Pflugel.com to the clipboard.
+// ======================================================
+(() => {
+  const nav = document.querySelector('#primary-nav');
+  if (!nav || nav.querySelector('.site-share-button')) return;
+
+  const shareButton = document.createElement('button');
+  shareButton.type = 'button';
+  shareButton.className = 'site-share-button';
+  shareButton.setAttribute('aria-label', 'Share Pflugel.com');
+  shareButton.setAttribute('title', 'Share Pflugel.com');
+  shareButton.innerHTML = `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="18" cy="5" r="2.25"></circle>
+      <circle cx="6" cy="12" r="2.25"></circle>
+      <circle cx="18" cy="19" r="2.25"></circle>
+      <path d="M8 11l7.7-4.6M8 13l7.7 4.6"></path>
+    </svg>
+    <span class="share-label">Share</span>
+  `;
+
+  const resumeButton = nav.querySelector('.nav-button');
+  if (resumeButton) {
+    nav.insertBefore(shareButton, resumeButton);
+  } else {
+    nav.appendChild(shareButton);
+  }
+
+  const shareData = {
+    title: 'Pflugel.com | George Pflugel',
+    text: 'Explore George Pflugel’s professional showcase, experience, projects, technology, operations, and practical AI work.',
+    url: 'https://pflugel.com/'
+  };
+
+  const setTemporaryLabel = (label) => {
+    const labelNode = shareButton.querySelector('.share-label');
+    if (!labelNode) return;
+    const original = 'Share';
+    labelNode.textContent = label;
+    window.setTimeout(() => {
+      labelNode.textContent = original;
+    }, 1800);
+  };
+
+  const copyShareLink = async () => {
+    try {
+      await navigator.clipboard.writeText(shareData.url);
+      setTemporaryLabel('Link copied');
+    } catch (error) {
+      const textarea = document.createElement('textarea');
+      textarea.value = shareData.url;
+      textarea.setAttribute('readonly', '');
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      textarea.remove();
+      setTemporaryLabel('Link copied');
+    }
+  };
+
+  shareButton.addEventListener('click', async () => {
+    if (window.PflugelAnalytics) {
+      window.PflugelAnalytics.track('site_share', {
+        method: navigator.share ? 'native_share' : 'copy_link'
+      });
+    }
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (error) {
+        // AbortError simply means the visitor closed the share sheet.
+        if (error && error.name !== 'AbortError') {
+          await copyShareLink();
+        }
+      }
+      return;
+    }
+
+    await copyShareLink();
+  });
+})();
