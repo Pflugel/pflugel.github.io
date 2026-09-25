@@ -6102,3 +6102,11 @@ video {
     width: 100%;
   }
 }
+
+
+/* =========================================================
+   V26.3 — MEDICAL RECOVERY COPY CLEANUP
+   ========================================================= */
+.recovery-detail-single {
+  grid-template-columns: 1fr;
+}

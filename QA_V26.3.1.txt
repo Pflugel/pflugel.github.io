@@ -1,0 +1,13 @@
+PFLUGEL.COM V26.3.1 QA REPORT
+================================
+
+BASELINE
+V26.3
+
+CHANGE VERIFIED
+- Collapsed Web Résumé heading: Medical Recovery
+- Expanded detail line 1 unchanged:
+  Unplanned medical recovery period away from full-time employment.
+- Expanded detail line 2 unchanged:
+  During recovery, began informally exploring ChatGPT.
+- Other site changes: NONE

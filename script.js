@@ -249,12 +249,14 @@ const careerData = {
   recovery: {
     index: '07 / 08',
     dates: '2024–2025',
-    company: 'Medical Recovery & Professional Development',
-    title: 'Career Recovery Period',
-    summary: 'Took a planned period away from full-time employment to recover from significant medical issues while continuing professional development in emerging technology, generative AI, automation, and modern digital workflows.',
-    responsibilities: ['Focused on recovery before returning to full-time professional work','Continued structured learning in emerging technology and AI','Explored workflow design and AI-assisted productivity'],
-    impact: ['Maintained professional development during the career pause','Built familiarity with modern LLM tools and automation concepts','Created the foundation for the next phase of independent technology work'],
-    skills: ['Professional Development','Generative AI','LLM Exploration','Emerging Technology','Workflow Design','AI-Assisted Productivity'],
+    company: 'Unplanned Medical Recovery Period',
+    title: '',
+    summary: 'An unplanned medical recovery period away from full-time employment. During recovery, I began informally exploring ChatGPT.',
+    responsibilities: ['Away from full-time employment during medical recovery.'],
+    impact: ['Began informally exploring ChatGPT during recovery.'],
+    responsibilityLabel: 'RECOVERY PERIOD',
+    impactLabel: 'DURING RECOVERY',
+    skills: [],
     progress: 87,
     progressLabel: '2024 →'
   },
@@ -311,18 +313,17 @@ if (eraButtons.length && eraPanel) {
             <p class="era-summary">${data.summary}</p>
             <div class="era-detail-grid">
               <section>
-                <span>RESPONSIBILITIES</span>
+                <span>${data.responsibilityLabel || 'RESPONSIBILITIES'}</span>
                 <ul>${listItems(data.responsibilities)}</ul>
               </section>
               <section>
-                <span>IMPACT / DEVELOPMENT</span>
+                <span>${data.impactLabel || 'IMPACT / DEVELOPMENT'}</span>
                 <ul>${listItems(data.impact)}</ul>
               </section>
             </div>
           </div>
           <aside class="era-skills">
-            <p class="section-kicker">SKILLS GAINED ALONG THE WAY</p>
-            <div class="era-skill-pills">${skillPills(data.skills)}</div>
+            ${data.skills.length ? `<p class="section-kicker">SKILLS GAINED ALONG THE WAY</p><div class="era-skill-pills">${skillPills(data.skills)}</div>` : ''}
             <div class="career-progress">
               <span>Career progression</span>
               <div class="progress-track"><i style="width:${data.progress}%"></i></div>

@@ -1,0 +1,18 @@
+PFLUGEL.COM V26.3 QA REPORT
+================================
+
+BASELINE
+V26.2
+
+2024–2025 MEDICAL RECOVERY
+- "planned period" wording removed: PASS
+- "professional development" framing removed from recovery entry: PASS
+- Career timeline label: Medical Recovery
+- Career detail title: Unplanned Medical Recovery Period
+- Web Resume title: Unplanned Medical Recovery Period
+- ChatGPT reference kept modest and informal: PASS
+- Skills/accomplishment claims attached to recovery period: NONE
+
+LINK / ASSET CHECK
+- Local references checked: 205
+- Missing local references: 0

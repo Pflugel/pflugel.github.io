@@ -206,3 +206,36 @@ CONTACT FORM / ANALYTICS-READY REVISION
 - No comments.
 - No Facebook link.
 - Added QA_V26.2.txt.
+
+
+PFLUGEL.COM — V26.3
+
+MEDICAL RECOVERY WORDING CLEANUP
+--------------------------------
+- Reframed 2024–2025 consistently as an unplanned medical recovery period.
+- Removed wording that described the period as planned.
+- Removed professional-development framing from the recovery period.
+- Career timeline now uses "Medical Recovery" / "Unplanned Medical Recovery Period."
+- Supporting copy is intentionally minimal.
+- Web Resume recovery detail reduced to one concise Career Context section.
+- No skills, accomplishments, or artificial career-development claims are attached
+  to the recovery period.
+
+
+PFLUGEL.COM — V26.3.1
+
+FINAL WEB RESUME LABEL POLISH
+-----------------------------
+- Changed the collapsed 2024–2025 Web Résumé heading from
+  "Unplanned Medical Recovery Period" to "Medical Recovery."
+- Expanded recovery details remain unchanged.
+- No other site content or design changes.
+
+
+PFLUGEL.COM — V26.3.2
+
+DOWNLOADABLE RESUME UPDATE
+--------------------------
+- Replaced assets/George-Pflugel-CV.pdf with the updated resume.
+- Updated PDF header includes Pflugel.com.
+- No HTML, CSS, JavaScript, layout, or website copy changes.
