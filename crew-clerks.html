@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7fbff" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="CrewClerks case study by George Pflugel, a voice-powered back office for service businesses." />
+  <title>CrewClerks Case Study | Pflugel.com</title>
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div></div>
+
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="Pflugel.com home">
+      <span>Pflugel</span><strong>.com</strong>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <a href="showcase.html">Showcase</a>
+      <a href="career.html">Career</a>
+      <a href="ai-lab.html" data-track="ai_lab">AI Lab</a>
+      <a href="writings.html" data-track="writings">Writings</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="nav-button" href="resume.html" data-track="web_resume">Web Résumé</a>
+    </nav>
+  </header>
+
+  <main class="cc-case-shell">
+    <nav class="case-breadcrumb reveal">
+      <a href="showcase.html">Showcase</a><span>→</span><strong>CrewClerks</strong>
+    </nav>
+
+    <!-- HERO -->
+    <section class="cc-hero reveal">
+      <div class="cc-hero-copy">
+        <div class="cc-product-brand">
+          <img src="assets/crewclerks-logo.png" alt="CrewClerks logo">
+          <div>
+            <span class="cc-status-chip">WORKING DEVELOPMENT PROTOTYPE</span>
+            <span class="cc-status-chip pale">VOICE-FIRST BUSINESS OPERATIONS</span>
+          </div>
+        </div>
+
+        <p class="section-kicker">PRODUCT CASE STUDY</p>
+        <h1>Speak naturally.<br><span>Paperwork happens.</span></h1>
+        <p class="cc-hero-role">CrewClerks · Voice-powered back office for service businesses</p>
+        <p class="cc-hero-lede">
+          CrewClerks is a voice-first workflow platform designed for service businesses. It turns natural spoken or typed job updates into organized business actions such as customer and job records, scheduling, labor, materials, reminders, billing records, proposals, paperwork, and translated communication.
+        </p>
+        <div class="cc-hero-actions">
+          <a class="button button-primary" href="#workflow">View Workflow</a>
+          <a class="button button-secondary" href="#product-screens">See Product Screens</a>
+          <a class="text-action" href="showcase.html">← Back to Showcase</a>
+        </div>
+      </div>
+
+      <div class="cc-hero-visual">
+        <div class="cc-browser-frame">
+          <div class="cc-browser-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <img src="assets/crewclerks-hero.png" alt="CrewClerks prototype home screen showing the Speak naturally. Paperwork happens. interface">
+        </div>
+        <div class="cc-hero-float">
+          <span>CORE PROMISE</span>
+          <strong>Speech becomes completed work.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- AT A GLANCE -->
+    <section class="cc-glance reveal">
+      <div class="cc-section-heading">
+        <p class="section-kicker">AT A GLANCE</p>
+        <h2>A product built around the work, not the form.</h2>
+      </div>
+      <div class="cc-glance-grid">
+        <article><span>01</span><strong>What it is</strong><p>Voice-powered workflow platform for service businesses.</p></article>
+        <article><span>02</span><strong>Built for</strong><p>Contractors, home-service companies, field teams, and owner-operators.</p></article>
+        <article><span>03</span><strong>Main value</strong><p>Turn one natural-language update into organized business actions.</p></article>
+        <article><span>04</span><strong>Core interaction</strong><p>Speak once → organize → review → approve → complete the work.</p></article>
+        <article><span>05</span><strong>Differentiator</strong><p>AI-assisted workflow organization with human approval before consequential actions.</p></article>
+        <article><span>06</span><strong>Current status</strong><p>Working development prototype with the controlled-beta foundation in development.</p></article>
+      </div>
+    </section>
+
+    <!-- PROBLEM / SOLUTION -->
+    <section class="cc-problem-solution reveal">
+      <article>
+        <p class="section-kicker">THE PROBLEM</p>
+        <h2>Real work does not arrive neatly formatted.</h2>
+        <p>
+          Service professionals work while moving between customers, job sites, vehicles, phone calls, materials, schedules, and paperwork. Details end up in memory, text messages, photos, handwritten notes, and disconnected systems. Measurements can be forgotten, materials underbilled, callbacks missed, and estimates or invoices delayed.
+        </p>
+      </article>
+      <article class="solution">
+        <p class="section-kicker">THE SOLUTION</p>
+        <h2>Capture once. Structure the rest.</h2>
+        <p>
+          CrewClerks captures a spoken or typed update once, identifies the customer and exact job, separates the update into structured work items, asks only for essential missing information, and presents one organized review before anything consequential is finalized.
+        </p>
+      </article>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section id="workflow" class="cc-workflow reveal">
+      <div class="cc-section-heading split">
+        <div>
+          <p class="section-kicker">HOW THE WORKFLOW WORKS</p>
+          <h2>One update. Four clear stages.</h2>
+        </div>
+        <p>Tap a stage to see what CrewClerks is doing behind the interface.</p>
+      </div>
+
+      <div class="cc-workflow-track" role="tablist" aria-label="CrewClerks workflow">
+        <button class="cc-step active" data-cc-step="capture" role="tab" aria-selected="true">
+          <span>01</span><strong>Capture</strong><small>Speak or type naturally</small>
+        </button>
+        <button class="cc-step" data-cc-step="organize" role="tab" aria-selected="false">
+          <span>02</span><strong>Organize</strong><small>Find the customer and work</small>
+        </button>
+        <button class="cc-step" data-cc-step="review" role="tab" aria-selected="false">
+          <span>03</span><strong>Review</strong><small>Fill gaps and correct</small>
+        </button>
+        <button class="cc-step" data-cc-step="approve" role="tab" aria-selected="false">
+          <span>04</span><strong>Approve & Save</strong><small>Complete the records</small>
+        </button>
+      </div>
+
+      <div class="cc-workflow-detail" id="cc-workflow-detail" aria-live="polite">
+        <div>
+          <span class="cc-detail-number">01 / CAPTURE</span>
+          <h3>Say what happened without choosing a form first.</h3>
+          <p>Voice, typed input, photos, measurements, labor, materials, schedule details, and reminders can begin as one natural update.</p>
+        </div>
+        <div class="cc-flow-code">
+          <span>INPUT</span>
+          <strong>“Mrs. Johnson approved the estimate. Schedule Tuesday morning, add two hours of labor, order another ceiling fan, and remind me to call the electrician.”</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT SCREEN EXPLORER -->
+    <section id="product-screens" class="cc-screens reveal">
+      <div class="cc-section-heading split">
+        <div>
+          <p class="section-kicker">REAL PROTOTYPE SCREENS</p>
+          <h2>Explore the product.</h2>
+        </div>
+        <p>These are actual screens from the working CrewClerks development prototype.</p>
+      </div>
+
+      <div class="cc-screen-tabs" role="tablist" aria-label="CrewClerks product screens">
+        <button class="cc-screen-tab active" data-screen="speak">Speak</button>
+        <button class="cc-screen-tab" data-screen="customers">Customers</button>
+        <button class="cc-screen-tab" data-screen="proposals">Proposals</button>
+        <button class="cc-screen-tab" data-screen="billing">Billing</button>
+        <button class="cc-screen-tab" data-screen="activity">Activity</button>
+        <button class="cc-screen-tab" data-screen="interpreter">Interpreter</button>
+        <button class="cc-screen-tab" data-screen="help">Help</button>
+        <button class="cc-screen-tab" data-screen="team">Team</button>
+        <button class="cc-screen-tab" data-screen="admin">Admin</button>
+      </div>
+
+      <div class="cc-screen-stage">
+        <div class="cc-screen-image-wrap">
+          <button class="cc-expand-image" type="button" aria-label="Open larger screenshot">
+            <img id="cc-screen-image" src="assets/crewclerks-speak.png" alt="CrewClerks Speak screen">
+          </button>
+        </div>
+        <div class="cc-screen-copy">
+          <span id="cc-screen-number">01 / 09</span>
+          <h3 id="cc-screen-title">Speak</h3>
+          <p id="cc-screen-purpose">Natural-language capture for mixed field updates.</p>
+          <div class="cc-screen-value">
+            <small>WHY IT MATTERS</small>
+            <p id="cc-screen-value">The user can begin with the work itself instead of hunting through menus and document types.</p>
+          </div>
+          <button class="text-action cc-next-screen" type="button">Next screen →</button>
+        </div>
+      </div>
+
+      <div class="cc-screen-thumbs" aria-label="CrewClerks screenshot thumbnails">
+        <button data-screen="speak" class="active"><img src="assets/crewclerks-speak.png" alt=""><span>Speak</span></button>
+        <button data-screen="customers"><img src="assets/crewclerks-customers.png" alt=""><span>Customers</span></button>
+        <button data-screen="proposals"><img src="assets/crewclerks-proposals.png" alt=""><span>Proposals</span></button>
+        <button data-screen="billing"><img src="assets/crewclerks-billing.png" alt=""><span>Billing</span></button>
+        <button data-screen="activity"><img src="assets/crewclerks-activity.png" alt=""><span>Activity</span></button>
+        <button data-screen="interpreter"><img src="assets/crewclerks-interpreter.png" alt=""><span>Interpreter</span></button>
+        <button data-screen="help"><img src="assets/crewclerks-help.png" alt=""><span>Help</span></button>
+        <button data-screen="team"><img src="assets/crewclerks-team.png" alt=""><span>Team</span></button>
+        <button data-screen="admin"><img src="assets/crewclerks-admin.png" alt=""><span>Admin</span></button>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="cc-features reveal">
+      <div class="cc-section-heading">
+        <p class="section-kicker">PRODUCT CAPABILITY</p>
+        <h2>What CrewClerks is designed to handle.</h2>
+      </div>
+      <div class="cc-feature-grid">
+        <article><span>VOICE</span><strong>Voice-first job updates</strong><p>Capture real work without stopping to navigate a form.</p></article>
+        <article><span>CONTEXT</span><strong>Customer & job matching</strong><p>Find the right destination before creating records.</p></article>
+        <article><span>AI</span><strong>Workflow separation</strong><p>Break one mixed update into distinct business actions.</p></article>
+        <article><span>GAPS</span><strong>Missing-information follow-up</strong><p>Ask short questions only when essential information is missing.</p></article>
+        <article><span>CONTROL</span><strong>Human review</strong><p>Keep consequential actions behind deliberate approval.</p></article>
+        <article><span>PROPOSALS</span><strong>Estimate & proposal creation</strong><p>Turn scope, measurements, labor, materials, and terms into structured proposals.</p></article>
+        <article><span>BILLING</span><strong>Documents & exports</strong><p>Prepare invoices, estimates, service reports, and accounting output.</p></article>
+        <article><span>FOLLOW-UP</span><strong>Reminders & scheduling</strong><p>Translate spoken commitments into trackable follow-up work.</p></article>
+        <article><span>HISTORY</span><strong>Audit trail</strong><p>Keep approved activity attached to the right customer and job.</p></article>
+        <article><span>LANGUAGE</span><strong>Bilingual support</strong><p>Support English/Spanish workflows and two-way interpreting.</p></article>
+        <article><span>ROLES</span><strong>Role-based permissions</strong><p>Separate owner, manager, crew, and billing authority.</p></article>
+        <article><span>PRIVACY</span><strong>Private workspace model</strong><p>Build toward company-separated customer and job data.</p></article>
+      </div>
+    </section>
+
+    <!-- DIFFERENTIATOR -->
+    <section class="cc-different reveal">
+      <div class="cc-different-lead">
+        <p class="section-kicker">WHY IT IS DIFFERENT</p>
+        <h2>Not dictation.<br>Not transcription.<br><span>Operational workflow.</span></h2>
+      </div>
+      <div class="cc-different-points">
+        <article><span>01</span><div><strong>Destination before document type.</strong><p>Identify who the information belongs to and which job it concerns before classifying the work.</p></div></article>
+        <article><span>02</span><div><strong>Multiple instructions can travel together.</strong><p>One natural update can become notes, labor, materials, schedule items, reminders, and billing drafts.</p></div></article>
+        <article><span>03</span><div><strong>Human approval remains part of the system.</strong><p>AI can organize and draft, but the user reviews consequential actions before they are finalized.</p></div></article>
+        <article><span>04</span><div><strong>Designed around field-service reality.</strong><p>The product starts with how people actually communicate while performing work, not with a generic AI chat window.</p></div></article>
+      </div>
+    </section>
+
+    <!-- ROLE -->
+    <section class="cc-role reveal">
+      <div class="cc-role-copy">
+        <p class="section-kicker">MY ROLE</p>
+        <h2>Product direction grounded in operations.</h2>
+        <p>
+          As product owner, I led the product concept, workflow direction, requirements thinking, operational framing, UX direction, feature prioritization, and iterative refinement of CrewClerks. The project reflects the way I approach AI: understand the real workflow first, then design the technology around the people doing the work.
+        </p>
+        <p>
+          Development has been AI-assisted. My contribution is best described as product and systems leadership rather than claiming traditional full-stack software engineering.
+        </p>
+      </div>
+      <div class="cc-role-grid">
+        <span>Product concept development</span>
+        <span>Workflow design</span>
+        <span>Requirements definition</span>
+        <span>UX direction</span>
+        <span>Prompt / system design guidance</span>
+        <span>Feature prioritization</span>
+        <span>Operational framing</span>
+        <span>AI-assisted development coordination</span>
+        <span>Testing & refinement</span>
+      </div>
+    </section>
+
+    <!-- STATUS -->
+    <section class="cc-status reveal">
+      <div class="cc-status-head">
+        <div>
+          <p class="section-kicker">CURRENT STATUS</p>
+          <h2>Working prototype in active development.</h2>
+        </div>
+        <span class="cc-phase-badge">PHASE A VERIFIED · PHASE B FOUNDATION IN DEVELOPMENT</span>
+      </div>
+      <div class="cc-status-grid">
+        <article><strong>Voice / typed capture</strong><span>Demonstrated</span></article>
+        <article><strong>Customer & job context</strong><span>Demonstrated</span></article>
+        <article><strong>Proposal workflow</strong><span>Demonstrated</span></article>
+        <article><strong>Billing exports</strong><span>Demonstrated</span></article>
+        <article><strong>Activity tracking</strong><span>Demonstrated</span></article>
+        <article><strong>Interpreter support</strong><span>Demonstrated</span></article>
+        <article><strong>Help / onboarding</strong><span>Demonstrated</span></article>
+        <article><strong>Team permissions</strong><span>Foundation visible</span></article>
+        <article><strong>Owner administration</strong><span>Foundation visible</span></article>
+      </div>
+      <p class="cc-status-note">
+        The current checkpoint is a development prototype rather than a public production beta. The next product milestone is secure company separation, authentication, roles, usage controls, and protected private workspaces.
+      </p>
+    </section>
+
+    <!-- PORTFOLIO CONNECTION -->
+    <section class="cc-portfolio-fit reveal">
+      <div>
+        <p class="section-kicker">WHY IT BELONGS IN THIS PORTFOLIO</p>
+        <h2>Operations experience translated into product design.</h2>
+      </div>
+      <p>
+        CrewClerks demonstrates how I connect operations thinking, workflow design, technical direction, customer reality, and modern AI tools. It is the bridge between decades of practical technology and operations experience and the newer AI-assisted product and automation work I am building now.
+      </p>
+    </section>
+
+    <section class="case-nav reveal">
+      <a href="sunbridge.html" data-track="project_sunbridge"><small>Previous</small><strong>← SunBridge</strong></a>
+      <a href="opportunity-engine.html" data-track="project_opportunity"><small>Next</small><strong>AI Opportunity Engine →</strong></a>
+    </section>
+  </main>
+
+  <div class="cc-lightbox" id="cc-lightbox" aria-hidden="true">
+    <button class="cc-lightbox-close" type="button" aria-label="Close screenshot">×</button>
+    <img src="" alt="" id="cc-lightbox-image">
+    <div><strong id="cc-lightbox-title"></strong><span>Click outside the image or press Esc to close.</span></div>
+  </div>
+
+  <footer>
+    <a class="site-brand footer-brand" href="index.html"><span>Pflugel</span><strong>.com</strong></a>
+    <p>George Pflugel · Operations · Technology · AI</p>
+    <p>© <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7fbff">
+  <meta name="description" content="AI Lab at Pflugel.com. George Pflugel's hands-on experiments in AI workflow design, automation, evaluation, product prototyping, and systems thinking.">
+  <title>AI Lab | Pflugel.com</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div></div>
+
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="Pflugel.com home"><span>Pflugel</span><strong>.com</strong></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <a href="showcase.html">Showcase</a>
+      <a href="career.html">Career</a>
+      <a class="active" href="ai-lab.html" data-track="ai_lab">AI Lab</a>
+      <a href="writings.html" data-track="writings">Writings</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="nav-button" href="resume.html" data-track="web_resume">Web Résumé</a>
+    </nav>
+  </header>
+
+  <main class="ailab-shell">
+    <nav class="case-breadcrumb reveal"><a href="index.html">Home</a><span>→</span><strong>AI Lab</strong></nav>
+
+    <section class="ailab-hero reveal">
+      <div class="ailab-hero-copy">
+        <div class="ailab-status-row">
+          <span>WORKFLOW DESIGN</span><span>AUTOMATION</span><span>EVALUATION</span><span>PROTOTYPING</span>
+        </div>
+        <p class="section-kicker">AI LAB</p>
+        <h1>Build it.<br><span>Test it.</span><br>Learn from it.</h1>
+        <p class="ailab-hero-role">A working lab for practical AI, automation, product experiments, and systems thinking.</p>
+        <p class="ailab-hero-lede">
+          This is where I explore how AI can improve real work. I use modern models and development tools to frame problems, structure workflows, prototype ideas, test assumptions, and turn useful concepts into working systems.
+        </p>
+        <div class="ailab-hero-actions">
+          <a class="button button-primary" href="#workbench">Explore the Workbench</a>
+          <a class="button button-secondary" href="#experiments">See Experiments</a>
+        </div>
+      </div>
+
+      <div class="ailab-live-panel">
+        <div class="ailab-console-head">
+          <div><i></i><i></i><i></i></div><span>pflugel-lab / active-session</span>
+        </div>
+        <div class="ailab-console-body" id="ailab-console-body">
+          <p><span>$</span> lab --focus</p><strong>Practical AI applied to real workflows</strong>
+          <p><span>$</span> method --current</p><strong>Understand → structure → prototype → evaluate → improve</strong>
+          <p><span>$</span> control</p><strong>Human review stays in the loop</strong>
+          <div class="ailab-cursor"></div>
+        </div>
+        <div class="ailab-console-actions">
+          <button class="active" data-lab-console="focus">Focus</button>
+          <button data-lab-console="stack">Stack</button>
+          <button data-lab-console="projects">Projects</button>
+          <button data-lab-console="principles">Principles</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="ailab-signals reveal">
+      <article><span>01</span><strong>Frame the real problem</strong><p>Start with the work, user, decision, or friction before choosing a model or tool.</p></article>
+      <article><span>02</span><strong>Structure the workflow</strong><p>Separate inputs, logic, actions, evidence, and human approvals so the system can be inspected.</p></article>
+      <article><span>03</span><strong>Prototype quickly</strong><p>Use AI-assisted development and automation to move from concept to something testable.</p></article>
+      <article><span>04</span><strong>Evaluate what happened</strong><p>Look for failure modes, weak assumptions, poor outputs, and opportunities to simplify.</p></article>
+    </section>
+
+    <section id="workbench" class="ailab-workbench reveal">
+      <div class="ailab-section-heading split">
+        <div><p class="section-kicker">TOOL WORKBENCH</p><h2>Tools are selected for the job, not the logo.</h2></div>
+        <p>Filter the workbench, then select a tool to see where it fits in the way I work.</p>
+      </div>
+
+      <div class="ailab-tool-filters" role="tablist" aria-label="AI Lab tool categories">
+        <button class="active" data-tool-filter="all">All</button>
+        <button data-tool-filter="ai">AI Models</button>
+        <button data-tool-filter="automation">Automation / Development</button>
+        <button data-tool-filter="systems">Systems / Digital</button>
+      </div>
+
+      <div class="ailab-workbench-grid">
+        <div class="ailab-tool-grid">
+          <button class="ailab-tool active" data-category="ai" data-tool="chatgpt"><span>AI</span><strong>ChatGPT</strong><small>Workflow design · prototyping · analysis</small></button>
+          <button class="ailab-tool" data-category="ai" data-tool="claude"><span>AI</span><strong>Claude</strong><small>Long-form reasoning · review · comparison</small></button>
+          <button class="ailab-tool" data-category="ai" data-tool="gemini"><span>AI</span><strong>Gemini</strong><small>Research · alternative model perspective</small></button>
+          <button class="ailab-tool" data-category="ai" data-tool="copilot"><span>AI</span><strong>Copilot</strong><small>Microsoft workflow support · coding assistance</small></button>
+          <button class="ailab-tool" data-category="ai" data-tool="perplexity"><span>AI</span><strong>Perplexity</strong><small>Research discovery · source-oriented exploration</small></button>
+
+          <button class="ailab-tool" data-category="automation" data-tool="n8n"><span>AUTO</span><strong>n8n</strong><small>Workflow orchestration · multi-step automation</small></button>
+          <button class="ailab-tool" data-category="automation" data-tool="python"><span>DEV</span><strong>Python</strong><small>Data processing · logic · desktop software</small></button>
+          <button class="ailab-tool" data-category="automation" data-tool="visualstudio"><span>DEV</span><strong>Visual Studio</strong><small>Application development workspace</small></button>
+          <button class="ailab-tool" data-category="automation" data-tool="vscode"><span>DEV</span><strong>VS Code</strong><small>Code · configuration · rapid iteration</small></button>
+          <button class="ailab-tool" data-category="automation" data-tool="docker"><span>DEV</span><strong>Docker Desktop</strong><small>Local services · isolated development environments</small></button>
+          <button class="ailab-tool" data-category="automation" data-tool="pgadmin"><span>DATA</span><strong>pgAdmin 4</strong><small>Database inspection · PostgreSQL administration</small></button>
+
+          <button class="ailab-tool" data-category="systems" data-tool="webdev"><span>WEB</span><strong>Website Development</strong><small>Responsive interfaces · product presentation</small></button>
+          <button class="ailab-tool" data-category="systems" data-tool="m365"><span>MS</span><strong>Microsoft 365</strong><small>Documents · business workflows · collaboration</small></button>
+          <button class="ailab-tool" data-category="systems" data-tool="windows"><span>OS</span><strong>Windows 11</strong><small>Advanced support · troubleshooting · configuration</small></button>
+          <button class="ailab-tool" data-category="systems" data-tool="prompting"><span>SYS</span><strong>Prompt / System Design</strong><small>Instructions · constraints · structured outputs</small></button>
+          <button class="ailab-tool" data-category="systems" data-tool="agentic"><span>SYS</span><strong>Agentic Concepts</strong><small>Multi-step actions · tool use · workflow control</small></button>
+        </div>
+
+        <aside class="ailab-tool-detail" id="ailab-tool-detail" aria-live="polite">
+          <span>SELECTED TOOL</span>
+          <h3>ChatGPT</h3>
+          <p class="tool-purpose">Used as a hands-on partner for workflow design, product prototyping, structured analysis, requirements development, and iterative testing.</p>
+          <div class="tool-use-block"><small>WHERE IT SHOWS UP</small><strong>CrewClerks · AI Opportunity Engine · FanDuel ATI Engine · Pflugel.com</strong></div>
+          <div class="tool-use-block"><small>HOW I USE IT</small><strong>Frame → structure → build → review → revise</strong></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="ailab-method reveal">
+      <div class="ailab-section-heading split">
+        <div><p class="section-kicker">WORKFLOW LAB</p><h2>AI is one part of the system.</h2></div>
+        <p>Select a stage to see how the work moves from idea to controlled output.</p>
+      </div>
+
+      <div class="ailab-method-track" role="tablist" aria-label="AI Lab workflow">
+        <button class="active" data-lab-stage="frame" role="tab" aria-selected="true"><span>01</span><strong>Frame</strong><small>What problem are we solving?</small></button>
+        <button data-lab-stage="structure" role="tab" aria-selected="false"><span>02</span><strong>Structure</strong><small>What are the inputs and rules?</small></button>
+        <button data-lab-stage="build" role="tab" aria-selected="false"><span>03</span><strong>Build</strong><small>What can become testable?</small></button>
+        <button data-lab-stage="evaluate" role="tab" aria-selected="false"><span>04</span><strong>Evaluate</strong><small>Where does it fail?</small></button>
+        <button data-lab-stage="iterate" role="tab" aria-selected="false"><span>05</span><strong>Iterate</strong><small>What should change next?</small></button>
+      </div>
+
+      <div class="ailab-method-detail" id="ailab-method-detail" aria-live="polite">
+        <div><span>01 / FRAME</span><h3>Start with the real-world friction.</h3><p>Define the user, the work, the decision, the constraint, and the outcome before deciding whether AI is even useful.</p></div>
+        <div class="ailab-method-checks"><strong>Questions I ask</strong><span>Who is doing the work?</span><span>What currently slows them down?</span><span>What must remain under human control?</span></div>
+      </div>
+    </section>
+
+    <section id="experiments" class="ailab-experiments reveal">
+      <div class="ailab-section-heading">
+        <p class="section-kicker">EXPERIMENT BOARD</p>
+        <h2>Ideas become more useful when they have to survive contact with reality.</h2>
+      </div>
+
+      <div class="ailab-experiment-grid">
+        <article class="ailab-experiment featured">
+          <div class="experiment-head"><span>WORKING PROTOTYPE</span><b>01</b></div>
+          <h3>CrewClerks</h3>
+          <p>Voice-first workflow design for service businesses. Natural language becomes structured customer, job, proposal, billing, reminder, and communication workflows.</p>
+          <div class="experiment-stack"><span>Voice AI</span><span>Product Design</span><span>Workflow Logic</span><span>Human Approval</span></div>
+          <a class="project-cta-button" href="crew-clerks.html" data-track="project_crewclerks">Explore CrewClerks <span>→</span></a>
+        </article>
+
+        <article class="ailab-experiment">
+          <div class="experiment-head"><span>DECISION SYSTEM</span><b>02</b></div>
+          <h3>AI Opportunity Engine</h3>
+          <p>Structured product and supplier research with hard gates, commercial scoring, confidence modeling, persistence, and n8n-oriented orchestration.</p>
+          <div class="experiment-stack"><span>n8n</span><span>LLMs</span><span>Scoring</span><span>Data Model</span></div>
+          <a class="project-cta-button" href="opportunity-engine.html" data-track="project_opportunity">Explore Opportunity Engine <span>→</span></a>
+        </article>
+
+        <article class="ailab-experiment">
+          <div class="experiment-head"><span>WORKING BETA SOFTWARE</span><b>03</b></div>
+          <h3>FanDuel ATI Engine</h3>
+          <p>Desktop software combining data workflows, simulation, lineup construction, late-slate controls, portfolio logic, and persistent learning.</p>
+          <div class="experiment-stack"><span>Python</span><span>Simulation</span><span>Desktop GUI</span><span>Iteration</span></div>
+          <a class="project-cta-button" href="fanduel-ati-engine.html" data-track="project_fanduel">View Product Walkthrough <span>→</span></a>
+        </article>
+
+        <article class="ailab-experiment">
+          <div class="experiment-head"><span>LIVE PORTFOLIO BUILD</span><b>04</b></div>
+          <h3>Pflugel.com</h3>
+          <p>This site is itself part of the lab. It combines information architecture, responsive web development, interactive presentation, project storytelling, and AI-assisted iteration.</p>
+          <div class="experiment-stack"><span>Web Development</span><span>UX</span><span>Content Systems</span><span>AI-Assisted Build</span></div>
+          <a class="project-cta-button" href="index.html">Return Home <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="ailab-principles reveal">
+      <div><p class="section-kicker">LAB PRINCIPLES</p><h2>Useful beats impressive sounding.</h2></div>
+      <div class="ailab-principle-grid">
+        <article><span>01</span><strong>Workflow before model</strong><p>Understand the work before reaching for AI.</p></article>
+        <article><span>02</span><strong>Evidence before confidence</strong><p>Separate what is known from what is inferred.</p></article>
+        <article><span>03</span><strong>Human control stays visible</strong><p>Consequential actions need clear review points.</p></article>
+        <article><span>04</span><strong>Prototype before overbuilding</strong><p>Test the idea while change is still inexpensive.</p></article>
+        <article><span>05</span><strong>Failures become requirements</strong><p>Bad outcomes are useful when they reveal what the system lacked.</p></article>
+        <article><span>06</span><strong>Keep the logic inspectable</strong><p>A system is easier to improve when its rules can be seen and challenged.</p></article>
+      </div>
+    </section>
+
+    <section class="ailab-cta reveal">
+      <div>
+        <p class="section-kicker">THE POINT OF THE LAB</p>
+        <h2>Learn enough to make the technology practical.</h2>
+        <p>The goal is not to collect AI buzzwords. The goal is to understand what the tools can do, where they fail, and how to turn them into systems that help people work better.</p>
+      </div>
+      <div class="ailab-cta-actions">
+        <a class="button button-primary" href="showcase.html">Explore the Showcase</a>
+        <a class="button button-secondary" href="career.html">View Career</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="site-brand footer-brand" href="index.html"><span>Pflugel</span><strong>.com</strong></a>
+    <p>George Pflugel · Operations · Technology · AI</p>
+    <p>© <span id="year"></span></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

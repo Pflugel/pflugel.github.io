@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7fbff">
+  <meta name="description" content="Writings by George Pflugel on technology, AI, operations, project lessons, and New York sports.">
+  <title>Writings | Pflugel.com</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div></div>
+
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="Pflugel.com home"><span>Pflugel</span><strong>.com</strong></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <a href="showcase.html">Showcase</a>
+      <a href="career.html">Career</a>
+      <a href="ai-lab.html" data-track="ai_lab">AI Lab</a>
+      <a class="active" href="writings.html" data-track="writings">Writings</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="nav-button" href="resume.html" data-track="web_resume">Web Résumé</a>
+    </nav>
+  </header>
+
+  <main class="writing-shell">
+    <nav class="case-breadcrumb reveal"><a href="index.html">Home</a><span>→</span><strong>Writings</strong></nav>
+
+    <section class="writing-hero reveal">
+      <div>
+        <p class="section-kicker">WRITINGS</p>
+        <h1>Ideas, lessons, and a few strong opinions.</h1>
+        <p class="writing-hero-lede">
+          This section is for longer-form thinking that does not belong inside a résumé or project case study. Technology, AI, operations, what I learned while building things, and occasionally New York sports.
+        </p>
+        <div class="writing-hero-actions">
+          <a class="button button-primary" href="#writing-library">Browse Topics</a>
+          <a class="button button-secondary" href="ai-lab.html" data-track="ai_lab">Visit AI Lab</a>
+        </div>
+      </div>
+
+      <aside class="writing-note-card">
+        <span>WHY THIS SECTION EXISTS</span>
+        <strong>Projects show what I build. Writing shows how I think.</strong>
+        <p>Not every useful idea needs to become a product. Some are better explained, questioned, or documented.</p>
+      </aside>
+    </section>
+
+    <section class="writing-topics reveal">
+      <article><span>01</span><strong>AI & Technology</strong><p>Practical use, limits, workflow design, tools, and lessons from experimentation.</p></article>
+      <article><span>02</span><strong>Operations & Work</strong><p>Process improvement, customer operations, training, systems, and what makes work actually function.</p></article>
+      <article><span>03</span><strong>Building Things</strong><p>What worked, what failed, and what changed while developing projects and prototypes.</p></article>
+      <article><span>04</span><strong>NY Sports Takes</strong><p>Yankees, Jets, Islanders, Knicks, and whatever needs to be said.</p></article>
+    </section>
+
+    <section id="writing-library" class="writing-library reveal">
+      <div class="writing-section-heading split">
+        <div>
+          <p class="section-kicker">WRITING LIBRARY</p>
+          <h2>A place to publish without turning the site into a blog farm.</h2>
+        </div>
+        <p>Filter the library by topic. The structure is live now, and actual pieces can be added without redesigning the page.</p>
+      </div>
+
+      <div class="writing-filters" role="tablist" aria-label="Writing categories">
+        <button class="active" data-writing-filter="all">All</button>
+        <button data-writing-filter="ai">AI & Technology</button>
+        <button data-writing-filter="operations">Operations & Work</button>
+        <button data-writing-filter="building">Building Things</button>
+        <button data-writing-filter="sports">NY Sports Takes</button>
+      </div>
+
+      <div class="writing-grid">
+        <article class="writing-card featured" data-writing-category="ai">
+          <div class="writing-card-head"><span>AI & TECHNOLOGY</span><b>COMING FIRST</b></div>
+          <h3>Practical AI without the theater.</h3>
+          <p>A future piece on the difference between using AI because it is impressive and using it because it improves a real workflow.</p>
+          <div class="writing-meta"><span>Planned article</span><span>Long-form</span></div>
+        </article>
+
+        <article class="writing-card" data-writing-category="building">
+          <div class="writing-card-head"><span>BUILDING THINGS</span><b>IN DEVELOPMENT</b></div>
+          <h3>What CrewClerks taught me about designing around the work.</h3>
+          <p>A future behind-the-scenes look at how the product moved from a voice assistant idea toward a structured operational workflow.</p>
+          <div class="writing-meta"><span>Project lesson</span><span>Case-note format</span></div>
+        </article>
+
+        <article class="writing-card" data-writing-category="operations">
+          <div class="writing-card-head"><span>OPERATIONS & WORK</span><b>PLANNED</b></div>
+          <h3>Technology should remove friction, not create a new job.</h3>
+          <p>A future piece about why the best tools fit the operating environment instead of forcing people to reorganize their work around the software.</p>
+          <div class="writing-meta"><span>Operations</span><span>Opinion / analysis</span></div>
+        </article>
+
+        <article class="writing-card" data-writing-category="sports">
+          <div class="writing-card-head"><span>NY SPORTS TAKES</span><b>PLANNED</b></div>
+          <h3>The sports section will be allowed to have more personality.</h3>
+          <p>Yankees, Jets, Islanders, Knicks. Separate from the professional content, easy to ignore if sports are not your thing.</p>
+          <div class="writing-meta"><span>Sports</span><span>Commentary</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="writing-format reveal">
+      <div>
+        <p class="section-kicker">FORMAT</p>
+        <h2>Different subjects, one simple publishing system.</h2>
+      </div>
+      <div class="writing-format-grid">
+        <article><span>01</span><strong>Long-form articles</strong><p>Deeper thinking, structured arguments, and project lessons.</p></article>
+        <article><span>02</span><strong>Short notes</strong><p>Quick observations that are useful but do not need a full article.</p></article>
+        <article><span>03</span><strong>Build journals</strong><p>What changed, why it changed, and what was learned during development.</p></article>
+        <article><span>04</span><strong>Sports takes</strong><p>Clearly separated commentary that can be more casual and opinionated.</p></article>
+      </div>
+    </section>
+
+    <section class="writing-status reveal">
+      <div>
+        <p class="section-kicker">CURRENT STATUS</p>
+        <h2>The publishing framework is ready.</h2>
+        <p>The first actual pieces can now be added one at a time without changing the site structure. Until then, the page is honest about what is planned rather than pretending placeholder articles are already published.</p>
+      </div>
+      <a class="button button-primary" href="index.html#contact">Contact Me</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="site-brand footer-brand" href="index.html"><span>Pflugel</span><strong>.com</strong></a>
+    <p>George Pflugel · Operations · Technology · AI</p>
+    <p>© <span id="year"></span></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

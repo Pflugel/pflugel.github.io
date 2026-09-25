@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7fbff" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="FanDuel ATI Engine case study by George Pflugel." />
+  <title>FanDuel ATI Engine | Pflugel.com</title>
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div></div>
+<header class="site-header">
+  <a class="site-brand" href="index.html" aria-label="Pflugel.com home">
+    <span>Pflugel</span><strong>.com</strong>
+  </a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+    <a href="showcase.html">Showcase</a>
+    <a href="career.html">Career</a>
+    <a href="ai-lab.html" data-track="ai_lab">AI Lab</a>
+    <a href="writings.html" data-track="writings">Writings</a>
+    <a href="index.html#contact">Contact</a>
+    <a class="nav-button" href="resume.html" data-track="web_resume">Web Résumé</a>
+  </nav>
+</header>
+<main class="case-shell">
+  <nav class="case-breadcrumb reveal"><a href="showcase.html">Showcase</a><span>→</span><strong>FanDuel ATI Engine</strong></nav>
+
+  <section class="case-hero reveal">
+    <div>
+      <div class="case-status-row"><span>ACTIVE PROTOTYPE</span><span>SPORTS ANALYTICS / SIMULATION</span><span>MLB + NFL ACTIVE · NBA + NHL INTEGRATION UNDERWAY</span></div>
+      <h1>FanDuel ATI Engine</h1>
+      <p>Working multi-sport DFS desktop software. MLB + NFL are active today, with NBA + NHL integration underway. The engine covers lineup building, slate intelligence, portfolio construction, late swap, simulation, exposure controls and learning from completed contests.</p>
+    </div>
+    <div class="case-system-visual" aria-hidden="true">
+      <div class="system-orbit orbit-one"></div>
+      <div class="system-orbit orbit-two"></div>
+      <div class="system-core">FA</div>
+      <span class="node node-a"></span><span class="node node-b"></span><span class="node node-c"></span>
+    </div>
+  </section>
+
+  <section id="inside-engine" class="fd-product-tour reveal">
+    <div class="fd-section-heading split">
+      <div>
+        <p class="section-kicker">INSIDE THE ATI ENGINE</p>
+        <h2>Real screens from the working desktop application.</h2>
+      </div>
+      <p>Choose a workflow stage to see the actual software used for slate preparation, live management and postgame learning.</p>
+    </div>
+
+    <div class="fd-screen-tabs" role="tablist" aria-label="FanDuel ATI Engine product screens">
+      <button class="fd-screen-tab active" data-fd-screen="build" role="tab" aria-selected="true"><span>①</span> Build Lineups</button>
+      <button class="fd-screen-tab update" data-fd-screen="update" role="tab" aria-selected="false"><span>②</span> Update Data</button>
+      <button class="fd-screen-tab late" data-fd-screen="late" role="tab" aria-selected="false"><span>③</span> Late Swap</button>
+      <button class="fd-screen-tab results" data-fd-screen="results" role="tab" aria-selected="false"><span>④</span> Results / History</button>
+      <button class="fd-screen-tab advanced" data-fd-screen="advanced" role="tab" aria-selected="false"><span>⚙</span> Advanced</button>
+    </div>
+
+    <div class="fd-screen-stage">
+      <div class="fd-screen-visual">
+        <button class="fd-expand-screen" type="button" aria-label="Open larger ATI Engine screenshot">
+          <img id="fd-screen-image" src="assets/fanduel-build-lineups.png" alt="FanDuel ATI Engine Build Lineups screen">
+        </button>
+      </div>
+      <div class="fd-screen-copy">
+        <span id="fd-screen-number">01 / 05</span>
+        <h3 id="fd-screen-title">Build Lineups</h3>
+        <p id="fd-screen-description">Creates contest-aware lineups for currently supported MLB and NFL slates, with NBA and NHL being added to the same multi-sport workflow.</p>
+        <div class="fd-screen-why">
+          <small>WHAT THIS SCREEN SHOWS</small>
+          <p id="fd-screen-detail">Slate files, reserved contests, optional projection override, build mode, slate status and adaptive Monte Carlo settings are brought together in the primary operating screen.</p>
+        </div>
+        <button class="text-action fd-next-screen" type="button">Next screen →</button>
+      </div>
+    </div>
+
+    <div class="fd-screen-thumbs" aria-label="ATI Engine screen thumbnails">
+      <button class="active" data-fd-screen="build"><img src="assets/fanduel-build-lineups.png" alt=""><span>Build Lineups</span></button>
+      <button data-fd-screen="update"><img src="assets/fanduel-update-data.png" alt=""><span>Update Data</span></button>
+      <button data-fd-screen="late"><img src="assets/fanduel-late-swap.png" alt=""><span>Late Swap</span></button>
+      <button data-fd-screen="results"><img src="assets/fanduel-results-history.png" alt=""><span>Results / History</span></button>
+      <button data-fd-screen="advanced"><img src="assets/fanduel-advanced.png" alt=""><span>Advanced</span></button>
+    </div>
+  </section>
+
+  <section class="fd-software-proof reveal">
+    <div class="fd-section-heading">
+      <p class="section-kicker">WORKING SOFTWARE</p>
+      <h2>Five screens. One connected operating workflow.</h2>
+    </div>
+    <div class="fd-proof-grid">
+      <article><span>01</span><strong>Build</strong><p>Load the slate, choose the build mode and create the lineup portfolio.</p></article>
+      <article><span>02</span><strong>Refresh</strong><p>Update intelligence, projections, ensembles and calibration inputs.</p></article>
+      <article><span>03</span><strong>React</strong><p>Manage late news, lock state, lineup watchers and affected-entry repairs.</p></article>
+      <article><span>04</span><strong>Learn</strong><p>Import completed contest history and carry bounded lessons forward.</p></article>
+      <article><span>05</span><strong>Control</strong><p>Keep testing and non-standard settings away from the normal live workflow.</p></article>
+    </div>
+  </section>
+
+  <section class="case-overview-grid">
+    <article class="case-copy-panel reveal">
+      <p class="section-kicker">THE PROBLEM</p>
+      <h2>What I was trying to solve</h2>
+      <p>A lineup generator can produce valid entries and still perform badly. The harder problem is portfolio construction: player exposure, correlation, contest type, late news, diversification, slate size, historical results and avoiding repeated mistakes.</p>
+    </article>
+    <article class="case-copy-panel reveal">
+      <p class="section-kicker">THE APPROACH</p>
+      <h2>How I structured it</h2>
+      <p>The engine evolved through live testing and repeated post-slate review. Features were added after specific failures: lineup concentration, inactive-player risk, stale projections, last-minute CSV problems, insufficient diversity and weak learning from prior slates.</p>
+    </article>
+  </section>
+
+  <section class="case-build reveal">
+    <div class="case-section-heading">
+      <p class="section-kicker">WHAT I DESIGNED</p>
+      <h2>From concept to working system.</h2>
+    </div>
+    <div class="case-feature-grid">
+      <article><span>01</span><h3>Portfolio generation</h3><p>Build multiple unique lineups while controlling concentration and maintaining viable alternatives.</p></article><article><span>02</span><h3>Simulation</h3><p>Use Monte Carlo concepts to compare candidate lineups under uncertainty rather than relying only on one projection.</p></article><article><span>03</span><h3>Exposure controls</h3><p>Track player usage, MVP exposure and portfolio concentration across the full set of entries.</p></article><article><span>04</span><h3>Late-swap workflow</h3><p>Support updating later-game players as news changes while respecting already-locked roster positions.</p></article><article><span>05</span><h3>Contest awareness</h3><p>Treat small-field contests differently from large-field tournament entries.</p></article><article><span>06</span><h3>Historical learning</h3><p>Track engine version, contest type, score, finish, ROI and other results so each slate can inform the next.</p></article>
+    </div>
+  </section>
+
+  <section class="case-tech reveal">
+    <div>
+      <p class="section-kicker">TOOLS / CONCEPTS</p>
+      <h2>Technology used or explored</h2>
+      <div class="case-stack"><span>Python</span><span>Simulation</span><span>Optimization</span><span>CSV workflows</span><span>Portfolio analytics</span><span>Late swap</span><span>Historical tracking</span></div>
+    </div>
+    <div class="case-learning">
+      <p class="section-kicker">WHAT I LEARNED</p>
+      <p>This project reinforced that optimization is not the same as prediction. A model needs reliable inputs, constraints, feedback loops and portfolio-level reasoning. It also taught me how quickly a 'working' tool can expose a new systems problem once it meets real use.</p>
+    </div>
+  </section>
+
+  <section class="case-nav reveal">
+    <a href="opportunity-engine.html" data-track="project_opportunity"><small>Previous</small><strong>← AI Opportunity Engine</strong></a>
+    <a href="sunbridge.html" data-track="project_sunbridge"><small>Next</small><strong>SunBridge →</strong></a>
+  </section>
+</main>
+
+<div class="fd-lightbox" id="fd-lightbox" aria-hidden="true">
+  <button class="fd-lightbox-close" type="button" aria-label="Close screenshot">×</button>
+  <img id="fd-lightbox-image" src="" alt="">
+  <div><strong id="fd-lightbox-title"></strong><span>Click outside the image or press Esc to close.</span></div>
+</div>
+<footer>
+  <a class="site-brand footer-brand" href="index.html"><span>Pflugel</span><strong>.com</strong></a>
+  <p>George Pflugel · Operations · Technology · AI</p>
+  <p>© <span id="year"></span></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

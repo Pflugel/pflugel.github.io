@@ -1,0 +1,38 @@
+PFLUGEL.COM V26.2 QA REPORT
+================================
+
+BASELINE
+V26.1
+
+CONTACT FORM
+- Static-site form provider: FormSubmit
+- Destination: george@pflugel.com
+- Phone field: none
+- Required visitor fields: name, email, reason, message
+- Spam honeypot: enabled
+- Custom subject: enabled
+- Custom table template: enabled
+- Custom thank-you page: thanks.html
+- First live submission requires one-time email activation with FormSubmit.
+
+ANALYTICS
+- Third-party analytics provider installed: NO
+- Vendor-neutral click/event hooks installed: YES
+- Supported future hooks: gtag / Google Analytics, Plausible, custom event listener
+- Contact form submit event: ready
+- Major project, résumé, AI Lab, Writings, LinkedIn, email, and SunBridge clicks: ready
+- Public visitor counter: NO
+- Comments: NO
+
+PRIVACY
+- Public phone number found in HTML: NO / PASS
+- Facebook links found: NO / PASS
+- Em dashes found in HTML: NO / PASS
+
+LOCAL LINK / ASSET CHECK
+- Local references checked: 205
+- Missing local references: 0
+
+LOCAL TESTING NOTE
+FormSubmit requires the form to be used from a web-served page. It is expected not to complete
+normally when index.html is opened directly from a local file path. Test the form after deployment.

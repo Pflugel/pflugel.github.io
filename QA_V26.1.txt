@@ -1,0 +1,35 @@
+PFLUGEL.COM V26.1 QA REPORT
+================================
+
+BASELINE
+V26
+
+CONTACT / PRIVACY
+- Public phone number in HTML text: PASS
+- Contact email: george@pflugel.com
+- LinkedIn: linkedin.com/in/pflugel
+- SunBridge Services contact path: added
+- Facebook contact link: not added
+- PDF resume remains downloadable; its contents are not duplicated as phone text in the HTML.
+
+STYLE / COPY
+- Em dashes remaining in HTML: 0 / PASS
+
+RESPONSIVE POLISH
+- Existing desktop layouts preserved.
+- Mobile touch targets reinforced.
+- Project card fixed heights relaxed on narrow screens.
+- Horizontal tab/filter strips retain touch scrolling.
+- Contact buttons stack full-width on phones.
+- Web-resume action buttons stack on phones.
+- Defensive overflow rules added to prevent horizontal page scrolling.
+
+LOCAL LINK / ASSET CHECK
+- Local references checked: 198
+- Missing local references: 0
+
+NOTES
+- One responsive site is used for Windows desktop, tablet, and mobile.
+- No separate mobile website is required.
+- Final real-device validation should happen after the site is temporarily/live hosted,
+  when it can be opened directly on an iPhone.

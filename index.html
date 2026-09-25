@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7fbff" />
+  <meta name="description" content="Pflugel.com, George Pflugel's interactive professional showcase, AI lab, career experience and writings." />
+  <title>Pflugel.com | George Pflugel</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true">
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="site-brand" href="#home" aria-label="Pflugel.com home">
+      <span>Pflugel</span><strong>.com</strong>
+    </a>
+
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <a href="showcase.html">Showcase</a>
+      <a href="career.html">Career</a>
+      <a href="ai-lab.html" data-track="ai_lab">AI Lab</a>
+      <a href="writings.html" data-track="writings">Writings</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-button" href="resume.html" data-track="web_resume">Web Résumé</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-top-grid reveal">
+        <div class="hero-main-card">
+          <div class="hero-copy">
+            <p class="signal-line">IDEAS <span>×</span> SYSTEMS <span>×</span> PEOPLE <span>×</span> PROGRESS</p>
+            <h1>George Pflugel</h1>
+            <p class="hero-role">Operations <span>•</span> Technology <span>•</span> AI <span>•</span> Program Leadership</p>
+            <p class="hero-tagline">Applied to real work.</p>
+            <p class="hero-summary">
+              I connect technology, operations and practical AI to improve how people work, communicate and get things done.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="showcase.html">Explore My Work</a>
+              <a class="button button-secondary" href="resume.html" data-track="web_resume">View My Résumé</a>
+            </div>
+
+            <div class="hero-proof">
+              <span><strong>30+</strong> years across operations and technology</span>
+              <span><strong>AI</strong> workflow and product experimentation</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-portrait-card" aria-label="Portrait accent panel">
+          <div class="portrait-card-stage">
+            <div class="portrait-card-orb orb-a"></div>
+            <div class="portrait-card-orb orb-b"></div>
+            <div class="portrait-card-grid"></div>
+            <img class="portrait-card-image" src="assets/george-home-portrait-v26.png" alt="George Pflugel" />
+          </div>
+        </aside>
+      </div>
+
+      <section class="dashboard reveal" aria-labelledby="dashboard-title">
+        <div class="dashboard-header">
+          <div>
+            <p class="section-kicker">INTERACTIVE OVERVIEW</p>
+            <h2 id="dashboard-title">Professional Dashboard</h2>
+          </div>
+          <p class="dashboard-intro">Tap a focus area to see how I approach the work.</p>
+        </div>
+
+        <div class="dashboard-grid">
+          <button class="dash-card active" data-panel="build" aria-pressed="true">
+            <span class="dash-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="4"/></svg>
+            </span>
+            <span><strong>Build</strong><small>Turn ideas into practical systems.</small></span>
+          </button>
+
+          <button class="dash-card" data-panel="improve" aria-pressed="false">
+            <span class="dash-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M22 19V3"/></svg>
+            </span>
+            <span><strong>Improve</strong><small>Find a better way and make it real.</small></span>
+          </button>
+
+          <button class="dash-card" data-panel="teach" aria-pressed="false">
+            <span class="dash-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7l8-4 8 4-8 4z"/><path d="M6 10v5c3 2 9 2 12 0v-5M20 8v6"/></svg>
+            </span>
+            <span><strong>Teach</strong><small>Make complex things understandable.</small></span>
+          </button>
+
+          <button class="dash-card" data-panel="lead" aria-pressed="false">
+            <span class="dash-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-4 2-7 5-7s5 3 5 7M13 20c0-3 1.5-5.5 4-5.5S21 17 21 20"/></svg>
+            </span>
+            <span><strong>Lead</strong><small>Connect people, priorities and outcomes.</small></span>
+          </button>
+        </div>
+
+        <div class="dashboard-detail" id="dashboard-detail" aria-live="polite">
+          <div>
+            <span class="detail-label">BUILD</span>
+            <h3>From rough idea to working structure.</h3>
+            <p>I use modern AI, automation and straightforward systems thinking to turn an idea into something people can actually use, test and improve.</p>
+          </div>
+          <div class="detail-points">
+            <span>Prototype quickly</span>
+            <span>Document the logic</span>
+            <span>Test with real use cases</span>
+          </div>
+        </div>
+
+        <div class="dashboard-footer">
+          <div>
+            <strong>Practical Solutions</strong>
+            <span>grounded in experience</span>
+          </div>
+          <div>
+            <strong>People Focused</strong>
+            <span>technology serves the user</span>
+          </div>
+          <div>
+            <strong>Continuous Improvement</strong>
+            <span>iterate, measure, refine</span>
+          </div>
+          <div>
+            <strong>Real-World Impact</strong>
+            <span>results that matter</span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="showcase" class="section">
+      <div class="section-heading reveal">
+        <p class="section-kicker">SHOWCASE</p>
+        <h2>Projects that show the work, not just the buzzwords.</h2>
+        <p>Working concepts, prototypes and experiments that demonstrate how I use AI, automation, systems thinking and iterative development.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-feature reveal">
+          <div class="project-top">
+            <div class="project-number">01</div>
+            <div class="project-tags"><span>Voice AI</span><span>Operations</span><span>Prototype</span></div>
+          </div>
+
+          <a class="project-preview crew-project-preview" href="crew-clerks.html" data-track="project_crewclerks" aria-label="Explore CrewClerks project">
+            <div class="project-preview-window">
+              <div class="project-preview-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src="assets/crewclerks-hero.png" alt="CrewClerks product interface showing Speak naturally. Paperwork happens.">
+            </div>
+            <div class="project-preview-caption">
+              <img src="assets/crewclerks-logo.png" alt="" aria-hidden="true">
+              <div>
+                <span>WORKING PRODUCT PROTOTYPE</span>
+                <strong>Speak naturally. Paperwork happens.</strong>
+              </div>
+            </div>
+          </a>
+
+          <div class="project-body">
+            <p class="project-type">VOICE-POWERED FIELD OPERATIONS</p>
+            <h3>Crew Clerks</h3>
+            <p>A voice-first concept for service businesses that captures customer information, labor, materials, estimates, change orders and field updates through natural conversation.</p>
+          </div>
+          <a class="project-link project-cta-button" href="crew-clerks.html" data-track="project_crewclerks">Explore Project <span>→</span></a>
+        </article>
+
+        <article class="project-card fanduel-project-card reveal">
+          <div class="project-top">
+            <div class="project-number">02</div>
+            <div class="project-tags"><span>Working Software</span><span>Simulation</span><span>Analytics</span></div>
+          </div>
+          <a class="fanduel-card-preview" href="fanduel-ati-engine.html" data-track="project_fanduel" aria-label="View FanDuel ATI Engine product walkthrough">
+            <img src="assets/fanduel-build-lineups.png" alt="FanDuel ATI Engine Build Lineups software screen">
+            <span>V1.5.1 BETA · DESKTOP APPLICATION</span>
+          </a>
+          <div class="project-body">
+            <p class="project-type">AI-ASSISTED SPORTS ANALYTICS</p>
+            <h3>FanDuel ATI Engine</h3>
+            <p>Multi-sport DFS desktop software for MLB + NFL, with NBA + NHL integration underway. Lineup building, slate intelligence, late swap, portfolio controls and persistent learning.</p>
+          </div>
+          <a class="project-link project-cta-button" href="fanduel-ati-engine.html" data-track="project_fanduel">View Product Walkthrough <span>→</span></a>
+        </article>
+
+        <article class="project-card compact-project sunbridge-project-card reveal">
+          <div class="project-top">
+            <div class="project-number">03</div>
+            <div class="project-tags"><span>Service Brand</span><span>AI Workflows</span></div>
+          </div>
+
+          <a class="sunbridge-card-brand sb23-home-preview compact-brand-preview" href="sunbridge.html" data-track="project_sunbridge" aria-label="Explore SunBridge Digital Solutions service brand">
+            <img src="assets/sunbridge-logo.png" alt="SunBridge Digital Solutions logo">
+            <div>
+              <strong>Technology services + AI workflow development</strong>
+              <span>Support · Custom Software · Web · Digital Services</span>
+            </div>
+          </a>
+
+          <div class="project-body compact-project-body">
+            <p class="project-type">BRANDED TECHNOLOGY SERVICES</p>
+            <h3>SunBridge Digital Solutions</h3>
+            <p>A branded service offering for approachable technology support, AI workflow and lightweight custom software development, digital coaching, and web services.</p>
+          </div>
+          <a class="project-link project-cta-button" href="sunbridge.html" data-track="project_sunbridge">Explore SunBridge <span>→</span></a>
+        </article>
+
+        <article class="project-card compact-project opportunity-project-card reveal">
+          <div class="project-top">
+            <div class="project-number">04</div>
+            <div class="project-tags"><span>n8n</span><span>LLMs</span><span>Decision Logic</span></div>
+          </div>
+
+          <a class="opportunity-home-preview" href="opportunity-engine.html" data-track="project_opportunity" aria-label="Explore AI Opportunity Engine">
+            <div class="op-preview-flow">
+              <span class="op-preview-node">Evidence</span>
+              <i>→</i>
+              <span class="op-preview-node">Hard Gates</span>
+              <i>→</i>
+              <span class="op-preview-node accent">Score</span>
+            </div>
+            <div class="op-preview-result">
+              <div><small>OPPORTUNITY</small><strong>82.4</strong></div>
+              <div><small>CONFIDENCE</small><strong>HIGH</strong></div>
+              <div class="op-preview-decision"><small>DECISION</small><strong>LIST</strong></div>
+            </div>
+            <span class="op-preview-caption">Evidence → rules → scoring → confidence → decision</span>
+          </a>
+
+          <div class="project-body compact-project-body">
+            <p class="project-type">WORKFLOW & DECISION ENGINE</p>
+            <h3>AI Opportunity Engine</h3>
+            <p>A structured evaluation system for research, evidence, hard gates, scoring, confidence, automation, and repeatable decisions.</p>
+          </div>
+          <a class="project-link project-cta-button" href="opportunity-engine.html" data-track="project_opportunity">Explore Project <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="career" class="section career-section">
+      <div class="career-intro reveal">
+        <p class="section-kicker">CAREER & EXPERIENCE</p>
+        <h2>Deep experience behind the new technology.</h2>
+        <p>
+          My current AI work sits on top of decades of experience in technical support,
+          training, operations, business systems, customer service and project execution.
+        </p>
+        <div class="career-actions">
+          <a class="button button-primary" href="resume.html" data-track="web_resume">Explore Web Résumé</a>
+          <a class="text-action" href="assets/George-Pflugel-CV.pdf" data-track="resume_pdf" download>Download PDF CV <span>↓</span></a>
+        </div>
+      </div>
+
+      <div class="career-timeline reveal">
+        <article>
+          <div class="timeline-marker"></div>
+          <div class="timeline-year">2009–2023</div>
+          <div>
+            <h3>Raytheon Technologies</h3>
+            <p class="timeline-role">Senior Analyst, Technical Training</p>
+            <p>Global digital-forensics training operations, stakeholder support, documentation, customer relationships and program continuity.</p>
+          </div>
+        </article>
+
+        <article>
+          <div class="timeline-marker"></div>
+          <div class="timeline-year">2004–2006</div>
+          <div>
+            <h3>Lydian Data Services</h3>
+            <p class="timeline-role">Director of Facilities & Support Services</p>
+            <p>Multi-site facilities, administrative services and internal technology-support operations.</p>
+          </div>
+        </article>
+
+        <article>
+          <div class="timeline-marker"></div>
+          <div class="timeline-year">1992–2001</div>
+          <div>
+            <h3>REUTERS + Darby Corporate Solutions</h3>
+            <p class="timeline-role">Technology Support → Project Management</p>
+            <p>Technical support, field service, relocations and project coordination across enterprise environments.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="ai-lab" class="section lab-section lab-section-v20">
+      <div class="section-heading reveal">
+        <p class="section-kicker">AI LAB</p>
+        <h2>Where ideas get tested before they become claims.</h2>
+        <p>AI Lab shows the tools, workflows, experiments, and lessons behind the project work. It is the place for prototypes, automation, system design, and practical testing.</p>
+      </div>
+
+      <div class="lab-v20-layout">
+        <article class="lab-v20-console reveal">
+          <div class="console-header">
+            <span class="console-dot"></span><span class="console-dot"></span><span class="console-dot"></span>
+            <span class="console-title">pflugel-lab / current-session</span>
+          </div>
+          <div class="console-body">
+            <p><span class="prompt">$</span> focus --current</p>
+            <p class="console-output">workflow design · automation · evaluation · product prototyping</p>
+            <p><span class="prompt">$</span> stack --active</p>
+            <p class="console-output">ChatGPT · Claude · Gemini · n8n · Python · Docker · pgAdmin · VS Code</p>
+            <p><span class="prompt">$</span> rule --important</p>
+            <p class="console-output">Useful beats impressive sounding.</p>
+            <span class="console-cursor"></span>
+          </div>
+          <a class="project-cta-button lab-enter-button" href="ai-lab.html" data-track="ai_lab">Enter AI Lab <span>→</span></a>
+        </article>
+
+        <div class="lab-v20-grid">
+          <article class="lab-v20-card reveal"><span>01 / DESIGN</span><h3>Frame the workflow</h3><p>Understand the real work before choosing the technology.</p></article>
+          <article class="lab-v20-card reveal"><span>02 / AUTOMATE</span><h3>Connect the steps</h3><p>Use tools such as n8n and Python to orchestrate repeatable work.</p></article>
+          <article class="lab-v20-card reveal"><span>03 / EVALUATE</span><h3>Test the output</h3><p>Separate evidence, judgment, failures, and assumptions.</p></article>
+          <article class="lab-v20-card reveal"><span>04 / ITERATE</span><h3>Turn failures into requirements</h3><p>Improve the system based on what actually happened.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="writings" class="section writings-section writings-section-v21">
+      <div class="section-heading reveal">
+        <p class="section-kicker">WRITINGS</p>
+        <h2>Projects show what I build. Writing shows how I think.</h2>
+        <p>Technology, AI, operations, project lessons, and a separate corner for New York sports.</p>
+      </div>
+
+      <div class="writings-v21-grid">
+        <article class="writing-home-card reveal">
+          <span>AI & TECHNOLOGY</span>
+          <h3>Practical AI, workflow design, and lessons from using the tools.</h3>
+          <p>Less hype, more focus on where AI actually helps and where it does not.</p>
+        </article>
+        <article class="writing-home-card reveal">
+          <span>OPERATIONS & WORK</span>
+          <h3>Systems only matter if people can actually use them.</h3>
+          <p>Process improvement, customer operations, training, and technology in the real world.</p>
+        </article>
+        <article class="writing-home-card reveal">
+          <span>BUILDING THINGS</span>
+          <h3>What changed while the projects were being built.</h3>
+          <p>Failures, refinements, decisions, and lessons from the work behind the finished screens.</p>
+        </article>
+        <article class="writing-home-card sports reveal">
+          <span>NY SPORTS TAKES</span>
+          <h3>Yankees. Jets. Islanders. Knicks.</h3>
+          <p>A separate section, because some opinions do not belong in the AI Lab.</p>
+        </article>
+      </div>
+
+      <div class="writings-home-cta reveal">
+        <a class="project-cta-button" href="writings.html" data-track="writings">Explore Writings <span>→</span></a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section-v262">
+      <div class="contact-card contact-card-v262 reveal">
+        <div class="contact-intro">
+          <p class="section-kicker">CONTACT</p>
+          <h2>Let's talk about the work.</h2>
+          <p>For employment, project conversations, professional networking, or technology services, email is still the easiest place to start. You can also send a message directly from this page.</p>
+
+          <div class="contact-direct-links">
+            <a class="button button-primary" href="mailto:george@pflugel.com" data-track="contact_email">george@pflugel.com</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/pflugel" target="_blank" rel="noopener" data-track="contact_linkedin">LinkedIn</a>
+            <a class="button button-secondary" href="sunbridge.html" data-track="contact_sunbridge">SunBridge Services</a>
+          </div>
+
+          <div class="contact-privacy-note">
+            <strong>Prefer email?</strong>
+            <span>No phone number is required or collected on this form.</span>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/george@pflugel.com" method="POST" data-track-form="contact_form">
+          <input type="hidden" name="_subject" value="New message from Pflugel.com">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://pflugel.com/thanks.html">
+          <input type="hidden" name="_url" value="https://pflugel.com/">
+          <input class="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form-field">
+            <label for="contact-name">Name</label>
+            <input id="contact-name" type="text" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" type="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="contact-topic">What are you contacting me about?</label>
+            <select id="contact-topic" name="reason" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Employment opportunity</option>
+              <option>Project or consulting conversation</option>
+              <option>SunBridge technology services</option>
+              <option>AI workflow or custom software</option>
+              <option>Professional networking</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="6" required></textarea>
+          </div>
+
+          <div class="contact-form-footer">
+            <button class="button button-primary contact-submit" type="submit">Send Message</button>
+            <p>Messages are sent privately to <strong>george@pflugel.com</strong>.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="site-brand footer-brand" href="#home"><span>Pflugel</span><strong>.com</strong></a>
+    <p>George Pflugel · Operations · Technology · AI</p>
+    <p>© <span id="year"></span></p>
+  </footer>
+
+  <dialog id="project-dialog" class="project-dialog">
+    <button class="dialog-close" aria-label="Close project details">×</button>
+    <div id="project-dialog-content"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

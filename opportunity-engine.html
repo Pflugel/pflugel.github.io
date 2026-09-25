@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7fbff" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="AI Opportunity Engine case study by George Pflugel, structured research, evidence, scoring and workflow automation." />
+  <title>AI Opportunity Engine | Pflugel.com</title>
+</head>
+<body>
+<div class="page-bg" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div></div>
+<header class="site-header">
+  <a class="site-brand" href="index.html" aria-label="Pflugel.com home"><span>Pflugel</span><strong>.com</strong></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+  <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+    <a href="showcase.html">Showcase</a><a href="career.html">Career</a><a href="ai-lab.html" data-track="ai_lab">AI Lab</a><a href="writings.html" data-track="writings">Writings</a><a href="index.html#contact">Contact</a><a class="nav-button" href="resume.html" data-track="web_resume">Web Résumé</a>
+  </nav>
+</header>
+<main class="oe-shell">
+  <nav class="case-breadcrumb reveal"><a href="showcase.html">Showcase</a><span>→</span><strong>AI Opportunity Engine</strong></nav>
+
+  <section class="oe-hero reveal">
+    <div>
+      <div class="oe-status-row"><span>EXPERIMENTAL DECISION SYSTEM</span><span>N8N + LLM WORKFLOW DESIGN</span></div>
+      <p class="section-kicker">SYSTEMS CASE STUDY</p>
+      <h1>AI Opportunity<br><span>Engine</span></h1>
+      <p class="oe-hero-role">Structured research, evidence, scoring, and workflow automation</p>
+      <p class="oe-hero-lede">An experimental decision system designed to turn scattered product and supplier research into a repeatable evaluation workflow. Evidence, hard-stop rules, commercial scoring, confidence, persistence, and final decisions stay separate so the reasoning can be inspected and improved.</p>
+      <div class="oe-hero-actions"><a class="button button-primary" href="#decision-flow">View Decision Flow</a><a class="button button-secondary" href="#scoring">Explore Scoring</a><a class="text-action" href="showcase.html">← Back to Showcase</a></div>
+    </div>
+    <div class="oe-hero-visual" aria-hidden="true">
+      <div class="oe-grid-bg"></div>
+      <div class="oe-node n1"><small>INPUT</small><strong>Evidence</strong></div>
+      <div class="oe-node n2"><small>RULES</small><strong>Hard Gates</strong></div>
+      <div class="oe-node n3"><small>SCORE</small><strong>Opportunity</strong></div>
+      <div class="oe-node n4"><small>QUALITY</small><strong>Confidence</strong></div>
+      <div class="oe-node n5"><small>OUTPUT</small><strong>Decision</strong></div>
+      <div class="oe-core">Evidence<br>≠<br>Judgment</div>
+    </div>
+  </section>
+
+  <section class="oe-glance reveal">
+    <div class="oe-section-heading"><p class="section-kicker">AT A GLANCE</p><h2>A fuzzy business decision turned into inspectable logic.</h2></div>
+    <div class="oe-glance-grid">
+      <article><span>01</span><strong>What it is</strong><p>AI-assisted research and opportunity evaluation workflow.</p></article>
+      <article><span>02</span><strong>Core problem</strong><p>Research becomes inconsistent when every decision is a fresh judgment call.</p></article>
+      <article><span>03</span><strong>Architecture</strong><p>Evidence → hard gates → scoring → confidence → persistence → decision.</p></article>
+      <article><span>04</span><strong>Automation</strong><p>n8n-oriented orchestration with structured data and LLM-assisted research.</p></article>
+      <article><span>05</span><strong>Key principle</strong><p>Commercial opportunity and evidence confidence remain separate.</p></article>
+      <article><span>06</span><strong>Status</strong><p>Experimental system and workflow prototype.</p></article>
+    </div>
+  </section>
+
+  <section class="oe-problem reveal">
+    <div><p class="section-kicker">THE PROBLEM</p><h2>Research breaks down when everything becomes one score.</h2><p>Evidence quality, supplier claims, commercial judgment, fatal risks, and AI-generated conclusions should not be collapsed into the same number.</p></div>
+    <div class="oe-problem-list">
+      <article><span>01</span><p>Evidence comes from different sources and varies in quality.</p></article>
+      <article><span>02</span><p>Supplier claims may not be equally supported by operating evidence.</p></article>
+      <article><span>03</span><p>A fatal issue can disappear when averaged into stronger scores.</p></article>
+      <article><span>04</span><p>Repeated evaluations drift when rules are not explicit.</p></article>
+      <article><span>05</span><p>AI reasoning becomes hard to inspect when evidence and judgment are blended.</p></article>
+    </div>
+  </section>
+
+  <section id="decision-flow" class="oe-flow-section reveal">
+    <div class="oe-section-heading split"><div><p class="section-kicker">DECISION ARCHITECTURE</p><h2>Six stages. Each does a different job.</h2></div><p>Tap a stage to inspect its responsibility in the evaluation pipeline.</p></div>
+    <div class="oe-stage-track" role="tablist" aria-label="Opportunity Engine decision stages">
+      <button class="oe-stage active" data-oe-stage="evidence" aria-selected="true"><span>01</span><strong>Evidence</strong><small>Gather facts</small></button>
+      <button class="oe-stage" data-oe-stage="gates" aria-selected="false"><span>02</span><strong>Hard Gates</strong><small>Reject fatal issues</small></button>
+      <button class="oe-stage" data-oe-stage="opportunity" aria-selected="false"><span>03</span><strong>Opportunity</strong><small>Commercial score</small></button>
+      <button class="oe-stage" data-oe-stage="confidence" aria-selected="false"><span>04</span><strong>Confidence</strong><small>Evidence quality</small></button>
+      <button class="oe-stage" data-oe-stage="persist" aria-selected="false"><span>05</span><strong>Persist</strong><small>One evaluation record</small></button>
+      <button class="oe-stage" data-oe-stage="decision" aria-selected="false"><span>06</span><strong>Decision</strong><small>Inspectable output</small></button>
+    </div>
+    <div class="oe-stage-detail" id="oe-stage-detail" aria-live="polite">
+      <div><span class="oe-detail-label">01 / GATHER EVIDENCE</span><h3>Collect the inputs before asking the system to judge them.</h3><p>Supplier, product, economics, logistics, demand, risk, and growth evidence are gathered as distinct inputs instead of being blended into one free-form AI answer.</p></div>
+      <div class="oe-detail-stack"><span>Supplier evidence</span><span>Economics</span><span>Logistics</span><span>Demand</span><span>Risk</span><span>Growth</span></div>
+    </div>
+  </section>
+
+  <section class="oe-gate-demo reveal">
+    <div><p class="section-kicker">HARD-GATE LOGIC</p><h2>Some problems should not be averaged away.</h2><p>A fatal risk remains fatal even when everything else looks attractive. Hard-gate rejection overrides later scoring.</p></div>
+    <div class="oe-gate-machine">
+      <div class="oe-gate-box"><small>EVIDENCE</small><strong>Evaluation candidate</strong></div><div class="oe-down">↓</div>
+      <div class="oe-gate-box"><small>HARD GATE</small><strong>Pass non-negotiable rules?</strong></div>
+      <div class="oe-gate-controls"><button class="oe-gate-toggle active" data-gate="pass">PASS</button><button class="oe-gate-toggle" data-gate="fail">FAIL</button></div>
+      <div class="oe-gate-result" id="oe-gate-result"><small>RESULT</small><strong>Continue to scoring</strong><span>Opportunity and confidence evaluation remain available.</span></div>
+    </div>
+  </section>
+
+  <section id="scoring" class="oe-scoring reveal">
+    <div class="oe-section-heading split"><div><p class="section-kicker">SCORING ARCHITECTURE</p><h2>Opportunity and confidence answer different questions.</h2></div><p>Keeping them separate prevents evidence quality from disappearing inside commercial attractiveness.</p></div>
+    <div class="oe-score-compare">
+      <article><span>COMMERCIAL ATTRACTIVENESS</span><h3>Opportunity Score</h3><p>How attractive does this opportunity appear commercially?</p><div class="oe-score-bands"><button><strong>80–100</strong><span>LIST</span></button><button><strong>65–79.99</strong><span>TEST</span></button><button><strong>50–64.99</strong><span>WATCH</span></button><button><strong>&lt; 50</strong><span>REJECT</span></button></div></article>
+      <div class="oe-not-equal">≠</div>
+      <article><span>EVIDENCE QUALITY</span><h3>Confidence Score</h3><p>How strong is the evidence behind that conclusion?</p><div class="oe-confidence-bands"><button><strong>80+</strong><span>HIGH</span></button><button><strong>60–79.99</strong><span>MODERATE</span></button><button><strong>40–59.99</strong><span>LOW</span></button><button><strong>&lt; 40</strong><span>VERY LOW</span></button></div></article>
+    </div>
+    <div class="oe-scenario"><div><span>WHY THE SEPARATION MATTERS</span><h3>High Opportunity / Low Confidence</h3><p>A commercially attractive candidate with weak evidence should trigger more research, not masquerade as a well-supported decision.</p></div><div class="oe-matrix"><div></div><div class="axis-top">Higher confidence →</div><div class="axis-left">Higher opportunity ↑</div><div>LIST<br><small>High confidence</small></div><div class="research">RESEARCH<br><small>Low confidence</small></div><div>WATCH<br><small>High confidence</small></div><div class="reject">REJECT<br><small>Low confidence</small></div></div></div>
+  </section>
+
+  <section class="oe-supplier reveal">
+    <div><p class="section-kicker">SUPPLIER EVIDENCE MODEL</p><h2>Evidence weight follows operational proof.</h2><p>The supplier evidence component gives the greatest weight to real operating evidence rather than unsupported claims.</p></div>
+    <div class="oe-weight-card">
+      <div class="oe-weight-row"><div><strong>Orders Routed</strong><span>Operational evidence</span></div><b>50%</b><i style="--w:50%"></i></div>
+      <div class="oe-weight-row"><div><strong>Units Fulfilled</strong><span>Fulfillment evidence</span></div><b>30%</b><i style="--w:30%"></i></div>
+      <div class="oe-weight-row"><div><strong>Supplier Reliability Score</strong><span>Reliability evidence</span></div><b>20%</b><i style="--w:20%"></i></div>
+    </div>
+  </section>
+
+  <section class="oe-persistence reveal">
+    <div class="oe-section-heading"><p class="section-kicker">PERSISTENCE / DATA MODEL</p><h2>One evaluation run. One Score record.</h2></div>
+    <div class="oe-persist-flow"><article><span>01</span><strong>Research & Evidence</strong><small>Inputs gathered</small></article><i>→</i><article><span>02</span><strong>Evaluation Run</strong><small>One assessment</small></article><i>→</i><article class="highlight"><span>03</span><strong>Single Score Row</strong><small>Created once, updated throughout</small></article><i>→</i><article><span>04</span><strong>Final State</strong><small>Decision + confidence + scores</small></article></div>
+    <div class="oe-record-anatomy"><span>HARD GATES</span><span>ECONOMICS</span><span>LOGISTICS</span><span>DEMAND</span><span>RISK</span><span>GROWTH</span><span>OPPORTUNITY</span><span>CONFIDENCE</span><span>DECISION</span></div>
+  </section>
+
+  <section class="oe-automation reveal">
+    <div><p class="section-kicker">WORKFLOW AUTOMATION</p><h2>n8n as orchestration infrastructure.</h2><p>Research, extraction, rules, scoring, persistence, and LLM-assisted reasoning are coordinated as separate workflow stages instead of one monolithic prompt.</p></div>
+    <div class="oe-auto-canvas"><div class="oe-auto-node">Research<br><small>inputs</small></div><span>→</span><div class="oe-auto-node">Structured<br><small>extraction</small></div><span>→</span><div class="oe-auto-node">Hard<br><small>gates</small></div><span>→</span><div class="oe-auto-node">Scoring<br><small>logic</small></div><span>→</span><div class="oe-auto-node">Persist<br><small>state</small></div><span>→</span><div class="oe-auto-node">Structured<br><small>output</small></div><div class="oe-auto-ai">LLM<br><small>assist</small></div></div>
+  </section>
+
+  <section class="oe-role reveal"><div><p class="section-kicker">MY ROLE</p><h2>Systems thinking before automation.</h2><p>I drove the system concept, evaluation logic, requirements, scoring architecture, hard-gate design, confidence model, workflow design, persistence decisions, prompt and AI orchestration, testing, and iteration.</p><p>This is best described as AI-assisted systems and workflow development rather than traditional full-stack engineering.</p></div><div class="oe-role-grid"><span>System concept</span><span>Requirements</span><span>Scoring architecture</span><span>Hard-gate design</span><span>Confidence model</span><span>Workflow design</span><span>Persistence architecture</span><span>Prompt / AI orchestration</span><span>Testing & iteration</span></div></section>
+
+  <section class="oe-learning reveal"><div><p class="section-kicker">WHAT I LEARNED</p><h2>Structure first. Automate second.</h2></div><div class="oe-learning-grid"><article><span>01</span><p>AI should not blur evidence and judgment into one opaque answer.</p></article><article><span>02</span><p>Hard business rules should remain explicit.</p></article><article><span>03</span><p>Confidence and opportunity measure different things.</p></article><article><span>04</span><p>Persistence architecture matters for repeatability.</p></article><article><span>05</span><p>Inspectable logic is easier to debug and improve.</p></article><article><span>06</span><p>Automation works better once the workflow is structured.</p></article></div></section>
+
+  <section class="oe-status reveal"><div><p class="section-kicker">CURRENT STATUS</p><h2>Experimental decision-system prototype.</h2><p>The project demonstrates structured scoring, hard gates, confidence modeling, persistence architecture, and n8n / LLM workflow thinking. It does not claim commercial validation or predictive performance.</p></div><div class="oe-status-tags"><span>Structured scoring</span><span>Hard gates</span><span>Confidence model</span><span>Persistence</span><span>n8n</span><span>LLM workflows</span></div></section>
+
+  <section class="oe-portfolio reveal"><div><p class="section-kicker">WHY IT BELONGS IN THIS PORTFOLIO</p><h2>Ambiguous judgment turned into a system that can be inspected.</h2></div><p>This project demonstrates how I take a fuzzy business decision, identify the rules and evidence, structure the logic, apply AI where useful, automate the workflow, and make the result easier to inspect and improve.</p></section>
+
+  <section class="case-nav reveal"><a href="crew-clerks.html" data-track="project_crewclerks"><small>Previous</small><strong>← CrewClerks</strong></a><a href="fanduel-ati-engine.html" data-track="project_fanduel"><small>Next</small><strong>FanDuel ATI Engine →</strong></a></section>
+</main>
+<footer><a class="site-brand footer-brand" href="index.html"><span>Pflugel</span><strong>.com</strong></a><p>George Pflugel · Operations · Technology · AI</p><p>© <span id="year"></span></p></footer>
+<script src="script.js"></script>
+</body>
+</html>
