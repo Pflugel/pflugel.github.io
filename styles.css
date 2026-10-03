@@ -6177,3 +6177,68 @@ video {
     transform: none;
   }
 }
+
+
+/* =========================================================
+   V27 — PROFESSIONAL DASHBOARD CAPABILITY REBALANCE
+   ========================================================= */
+
+.dashboard-grid .dash-card {
+  min-width: 0;
+  align-items: flex-start;
+}
+
+.dashboard-grid .dash-card > span:last-child {
+  min-width: 0;
+}
+
+.dashboard-grid .dash-card strong {
+  line-height: 1.18;
+}
+
+.dashboard-detail {
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, .95fr);
+  align-items: start;
+}
+
+.dashboard-detail p {
+  max-width: 720px;
+  line-height: 1.55;
+}
+
+.detail-points {
+  max-width: 560px;
+  justify-content: flex-end;
+}
+
+.detail-points span {
+  white-space: normal;
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .dashboard-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-points {
+    max-width: none;
+    justify-content: flex-start;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 700px) {
+  .dashboard-grid .dash-card strong {
+    font-size: .82rem;
+  }
+
+  .dashboard-grid .dash-card small {
+    margin-top: 5px;
+  }
+
+  .detail-points span {
+    font-size: .64rem;
+    padding: 7px 8px;
+  }
+}

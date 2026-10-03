@@ -113,29 +113,65 @@ document.querySelectorAll('#year').forEach(el => {
 
 // Interactive Professional Dashboard
 const dashboardContent = {
-  build: {
-    label: 'BUILD',
-    title: 'From rough idea to working structure.',
-    body: 'I use modern AI, automation and straightforward systems thinking to turn an idea into something people can actually use, test and improve.',
-    points: ['Prototype quickly', 'Document the logic', 'Test with real use cases']
+  operations: {
+    label: 'OPERATIONS & ADMINISTRATION',
+    title: 'Practical support for the day-to-day work of an organization.',
+    body: 'I bring hands-on experience across administrative services, office operations, customer support, documentation and internal coordination, with the technology skills to support the people doing the work.',
+    points: [
+      'Administrative Services',
+      'Office Operations',
+      'Reception / Front Desk',
+      'Mail / Shipping / Receiving',
+      'Purchasing & Supplies',
+      'Scheduling & Coordination',
+      'Customer Service & Phone Support',
+      'Microsoft 365 & Windows'
+    ]
   },
-  improve: {
-    label: 'IMPROVE',
-    title: 'Learn the operation before changing the operation.',
-    body: 'I look for friction, repetitive work, communication gaps and avoidable complexity—then improve the process without disrupting what already works.',
-    points: ['Understand the workflow', 'Find the bottleneck', 'Automate selectively']
+  facilities: {
+    label: 'FACILITIES & WORKPLACE',
+    title: 'Keep workplaces safe, ready and operational.',
+    body: 'My facilities capabilities include workplace services, vendor and contractor coordination, security and access systems, emergency preparedness, continuity support, maintenance coordination and physical site readiness.',
+    points: [
+      'Facilities Operations',
+      'Workplace Services',
+      'Vendor / Contractor Coordination',
+      'Security & Access Systems',
+      'Emergency / Storm Preparation',
+      'Business Continuity Support',
+      'Maintenance & Site Readiness',
+      'Space & Move Planning'
+    ]
   },
-  teach: {
-    label: 'TEACH',
-    title: 'Make complex technology usable.',
-    body: 'Technical knowledge only creates value when people can understand and apply it. My background in training and support shapes how I document, explain and roll out new systems.',
-    points: ['Plain-language guidance', 'Practical documentation', 'Support adoption']
+  projects: {
+    label: 'PROJECTS & INFRASTRUCTURE',
+    title: 'Organize complex physical and technical work from plan through delivery.',
+    body: 'I use formal project-management practices, including PMI principles and Microsoft Project, to coordinate relocations, construction-related work, infrastructure, drawings, vendors, cutovers and field execution.',
+    points: [
+      'Project Management',
+      'PMI-Based Practices',
+      'Microsoft Project',
+      'Corporate & Data Center Relocations',
+      'Construction Project Coordination',
+      'Commercial Blueprint / Drawing Review',
+      'Structured Cabling & Patch Panels',
+      'Low-Voltage / Telecom Infrastructure'
+    ]
   },
-  lead: {
-    label: 'LEAD',
-    title: 'Connect people, priorities and execution.',
-    body: 'I am comfortable working across customers, technical teams, operations and leadership—keeping the work organized while maintaining focus on service and outcomes.',
-    points: ['Coordinate stakeholders', 'Create clarity', 'Keep work moving']
+  technology: {
+    label: 'TECHNOLOGY, TRAINING & AI',
+    title: 'Connect people, systems and modern tools.',
+    body: 'Technology has been part of my work throughout my career, from end-user support and technical training to business systems, workflow improvement, generative AI and practical automation.',
+    points: [
+      'End-User / Desktop Support',
+      'Technical Training',
+      'Microsoft 365 & Windows',
+      'Business Systems',
+      'Workflow Improvement',
+      'Generative AI / LLM Workflows',
+      'AI-Assisted Documentation',
+      'Automation & AI Workflow Design'
+    ]
   }
 };
 
