@@ -6301,3 +6301,19 @@ video {
     gap: 7px;
   }
 }
+
+
+/* =========================================================
+   V27.3 — DASHBOARD CONTEXTUAL CTA
+   ========================================================= */
+
+.dashboard-cta {
+  margin-top: 16px;
+}
+
+.dashboard-cta .button {
+  min-height: 40px;
+  padding: 0 14px;
+  font-size: .8rem;
+  box-shadow: none;
+}

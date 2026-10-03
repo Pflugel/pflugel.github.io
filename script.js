@@ -193,7 +193,11 @@ const dashboardContent = {
       'Website Development',
       'OBS Studio',
       'Autopsy'
-    ]
+    ],
+    cta: {
+      label: 'View My AI Projects',
+      href: '#showcase'
+    }
   }
 };
 
@@ -222,6 +226,11 @@ dashCards.forEach(card => {
       <div class="detail-points">
         ${data.points.map(point => `<span>${point}</span>`).join('')}
       </div>
+      ${data.cta ? `
+        <div class="dashboard-cta">
+          <a class="button button-secondary" href="${data.cta.href}">${data.cta.label}</a>
+        </div>
+      ` : ''}
     `;
   });
 });
