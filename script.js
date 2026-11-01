@@ -160,8 +160,8 @@ const dashboardContent = {
   },
   technology: {
     label: 'TECHNOLOGY, TRAINING & AI',
-    title: 'Connect people, business systems, modern AI and practical technology.',
-    body: 'My technology background starts with enterprise and end-user systems, extends into practical AI and automation, and includes hands-on experience with the development tools used to build and support modern workflows.',
+    title: 'Connect people, business systems, websites, modern AI and practical technology.',
+    body: 'My technology background starts with enterprise and end-user systems, includes designing and building modern websites, extends into practical AI and automation, and includes hands-on experience with AI-assisted software development and the tools used to build and support modern workflows.',
     points: [
       'Microsoft 365',
       'Microsoft Office',
@@ -171,6 +171,11 @@ const dashboardContent = {
       'Adobe Acrobat',
       'Business Systems',
       'End-User / Desktop Support',
+      'Website Development',
+      'AI-Assisted Web Development',
+      'Responsive Web Design',
+      'GitHub Pages',
+      'Domain & DNS Management',
       'Technical Training',
       'ChatGPT',
       'Claude',
@@ -190,7 +195,6 @@ const dashboardContent = {
       'Visual Studio',
       'VS Code',
       'Python',
-      'Website Development',
       'OBS Studio',
       'Autopsy'
     ],
@@ -877,41 +881,35 @@ if(sbServiceButtons.length&&sbServiceDetail){
 // V23 SUNBRIDGE SERVICE OFFERING
 // ======================================================
 const sb23ServiceData={
-  support:{
-    label:'01 / COMPUTER & DIGITAL SUPPORT',
-    title:'Help with the technology people use every day.',
-    text:'Hands-on support for computers, laptops, smartphones, tablets, printers, software, accounts, security basics, setup, troubleshooting, and remote support.',
-    items:['Computers & laptops','Smartphones & tablets','Printers & scanners','Windows 11','Microsoft 365','Remote technical support']
+  website:{
+    label:'01 / WEBSITE DESIGN & DEVELOPMENT',
+    title:'Design and build a professional website around the actual goal.',
+    text:'Website work can range from a focused personal or professional site to a multi-page business presence, with responsive design, clear content structure, domain and launch support, and practical functionality built around the audience.',
+    items:['Custom website design','Responsive development','Business & professional sites','Portfolio sites','Domain & DNS setup','Launch & deployment']
   },
-  web:{
-    label:'02 / WEBSITE & DOMAIN SERVICES',
-    title:'Help establish or clean up a practical web presence.',
-    text:'Support with simple websites, domains, basic online presence, account cleanup, digital organization, and customer-facing web content.',
-    items:['Website development','Domain setup','Website updates','Online account cleanup','Digital footprint cleanup','Basic web presence']
+  presence:{
+    label:'02 / REDESIGNS & DIGITAL PRESENCE',
+    title:'Improve an existing site or rebuild the digital presence around a clearer message.',
+    text:'Redesign work can address outdated layouts, weak mobile behavior, confusing navigation, inconsistent branding, poor content structure, domain changes, business email, SEO fundamentals, performance and ongoing website updates.',
+    items:['Website redesigns','Mobile improvements','Content restructuring','Brand consistency','SEO fundamentals','Ongoing updates']
   },
-  ai:{
-    label:'03 / AI GUIDANCE & COACHING',
-    title:'Make modern AI useful for a real task.',
-    text:'Practical coaching for ChatGPT, Claude, Gemini, Copilot, Perplexity, voice assistants, and AI-supported workflows, explained without unnecessary jargon.',
-    items:['ChatGPT','Claude','Gemini','Copilot','Perplexity','Prompt and workflow guidance']
-  },
-  home:{
-    label:'04 / SMART HOME & WI-FI',
-    title:'Help connect the devices people depend on at home.',
-    text:'Practical support for home Wi-Fi, connected devices, smart-home setup, peripheral connections, printers, and everyday network troubleshooting.',
-    items:['Wi-Fi troubleshooting','Smart-home setup','Device connections','Printers','Streaming / peripherals','Home technology coaching']
+  integrations:{
+    label:'03 / WEB INTEGRATIONS & AI FEATURES',
+    title:'Add useful functionality without turning the site into unnecessary complexity.',
+    text:'Websites can be extended with forms, scheduling, customer intake, email workflows, embedded tools, AI-supported features, analytics-ready events and other integrations that improve the customer or business workflow.',
+    items:['Forms & intake','Scheduling','Email workflows','AI-enabled features','Third-party integrations','Analytics-ready events']
   },
   software:{
-    label:'05 / AI WORKFLOW & CUSTOM SOFTWARE',
-    title:'Build lightweight software around the way the customer already works.',
-    text:'AI-enabled workflow development for small businesses and individuals who need a focused tool rather than a large software platform. This can include lightweight custom applications, internal tools, workflow automation, structured AI assistants, forms, dashboards, and task-specific software designed around an existing process.',
-    items:['AI workflow design','Lightweight custom apps','Internal tools','Workflow automation','AI-assisted forms','Task-specific software']
+    label:'04 / AI-ASSISTED SOFTWARE DEVELOPMENT',
+    title:'Build focused software when a website alone is not enough.',
+    text:'AI-assisted development can produce lightweight custom applications, dashboards, portals, internal tools and task-specific software designed around a defined workflow or operational need.',
+    items:['Custom applications','Dashboards','Portals','Internal tools','Task-specific software','AI-assisted development']
   },
-  data:{
-    label:'06 / DIGITAL DATA COLLECTION',
-    title:'Collection-focused support with a clear boundary.',
-    text:'Acquisition, collection, preservation, and documentation support for digital data. The service is not positioned as forensic analysis, expert testimony, or legal conclusions.',
-    items:['Data acquisition','Collection support','Preservation','Documentation','Integrity awareness','Collection only']
+  automation:{
+    label:'05 / AUTOMATION & INTERNAL TOOLS',
+    title:'Connect repetitive work into a more efficient system.',
+    text:'Workflow automation and connected tools can reduce manual handoffs, organize information, trigger repeatable actions and create practical internal systems around the way the organization already works.',
+    items:['Workflow automation','n8n workflows','Connected systems','Structured assistants','Data handoffs','Process improvement']
   }
 };
 

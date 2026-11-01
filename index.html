@@ -7,7 +7,18 @@
   <meta name="description" content="Pflugel.com, George Pflugel's interactive professional showcase, AI lab, career experience and writings." />
   <title>Pflugel.com | George Pflugel</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=27.3" />
+  <link rel="stylesheet" href="styles.css?v=27.4" />
+  <style>
+    .dashboard-cta .button.button-secondary {
+      color: #fff;
+      background: linear-gradient(135deg, #0d6fc0, #2b91da);
+      border-color: transparent;
+      box-shadow: 0 10px 24px rgba(24,120,201,.20);
+    }
+    .dashboard-cta .button.button-secondary:hover {
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
   <div class="page-bg" aria-hidden="true">
@@ -89,6 +100,16 @@
             <span><strong>Operations &amp; Administration</strong><small>Keep offices, services and people moving.</small></span>
           </button>
 
+          <button class="dash-card" data-panel="technology" aria-pressed="false">
+            <span class="dash-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="12" rx="2"/>
+                <path d="M8 20h8M12 16v4M8 10h2M12 10h4"/>
+              </svg>
+            </span>
+            <span><strong>Technology, Training &amp; AI</strong><small>Support users, systems and modern workflows.</small></span>
+          </button>
+
           <button class="dash-card" data-panel="facilities" aria-pressed="false">
             <span class="dash-icon">
               <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -105,16 +126,6 @@
               </svg>
             </span>
             <span><strong>Projects &amp; Infrastructure</strong><small>Plan and coordinate moves, construction and technical delivery.</small></span>
-          </button>
-
-          <button class="dash-card" data-panel="technology" aria-pressed="false">
-            <span class="dash-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="3" y="4" width="18" height="12" rx="2"/>
-                <path d="M8 20h8M12 16v4M8 10h2M12 10h4"/>
-              </svg>
-            </span>
-            <span><strong>Technology, Training &amp; AI</strong><small>Support users, systems and modern workflows.</small></span>
           </button>
         </div>
 
@@ -142,16 +153,16 @@
             <span>office support and coordination</span>
           </div>
           <div>
+            <strong>Technology &amp; AI</strong>
+            <span>support, training and improvement</span>
+          </div>
+          <div>
             <strong>Facilities Operations</strong>
             <span>workplace readiness and continuity</span>
           </div>
           <div>
             <strong>Project Delivery</strong>
             <span>PMI-based planning and coordination</span>
-          </div>
-          <div>
-            <strong>Technology &amp; AI</strong>
-            <span>support, training and improvement</span>
           </div>
         </div>
       </section>
@@ -161,13 +172,35 @@
       <div class="section-heading reveal">
         <p class="section-kicker">AI-ASSISTED SHOWCASE</p>
         <h2>Projects that show the work, not just the buzzwords.</h2>
-        <p>Working concepts, prototypes and experiments that demonstrate how I use AI, automation, systems thinking and iterative development.</p>
+        <p>Websites, working products, prototypes and experiments that demonstrate how I use technology, AI, automation, systems thinking and iterative development.</p>
       </div>
 
       <div class="project-grid">
-        <article class="project-card project-feature reveal">
+        <article class="project-card project-feature sunbridge-project-card reveal">
           <div class="project-top">
             <div class="project-number">01</div>
+            <div class="project-tags"><span>Website Development</span><span>AI-Assisted Software</span><span>Digital Solutions</span></div>
+          </div>
+
+          <a class="sunbridge-card-brand sb23-home-preview compact-brand-preview" href="sunbridge.html" data-track="project_sunbridge" aria-label="Explore SunBridge Digital Solutions service brand">
+            <img src="assets/sunbridge-logo-navy-v2.png" alt="SunBridge Digital Solutions logo">
+            <div>
+              <strong>Website development + practical software solutions</strong>
+              <span>Websites · AI-Assisted Software · Digital Solutions</span>
+            </div>
+          </a>
+
+          <div class="project-body compact-project-body">
+            <p class="project-type">WEBSITE &amp; SOFTWARE DEVELOPMENT</p>
+            <h3>SunBridge Digital AI Solutions</h3>
+            <p>A website-first digital solutions offering focused on designing and building modern business websites, supported by AI-assisted software development, workflow automation and practical technology services.</p>
+          </div>
+          <a class="project-link project-cta-button" href="sunbridge.html" data-track="project_sunbridge">Explore SunBridge <span>→</span></a>
+        </article>
+
+        <article class="project-card crew-project-card reveal">
+          <div class="project-top">
+            <div class="project-number">02</div>
             <div class="project-tags"><span>Voice AI</span><span>Operations</span><span>Prototype</span></div>
           </div>
 
@@ -195,7 +228,7 @@
 
         <article class="project-card fanduel-project-card reveal">
           <div class="project-top">
-            <div class="project-number">02</div>
+            <div class="project-number">03</div>
             <div class="project-tags"><span>Working Software</span><span>Simulation</span><span>Analytics</span></div>
           </div>
           <a class="fanduel-card-preview" href="fanduel-ati-engine.html" data-track="project_fanduel" aria-label="View FanDuel ATI Engine product walkthrough">
@@ -208,28 +241,6 @@
             <p>Multi-sport DFS desktop software for MLB + NFL, with NBA + NHL integration underway. Lineup building, slate intelligence, late swap, portfolio controls and persistent learning.</p>
           </div>
           <a class="project-link project-cta-button" href="fanduel-ati-engine.html" data-track="project_fanduel">View Product Walkthrough <span>→</span></a>
-        </article>
-
-        <article class="project-card compact-project sunbridge-project-card reveal">
-          <div class="project-top">
-            <div class="project-number">03</div>
-            <div class="project-tags"><span>Service Brand</span><span>AI Workflows</span></div>
-          </div>
-
-          <a class="sunbridge-card-brand sb23-home-preview compact-brand-preview" href="sunbridge.html" data-track="project_sunbridge" aria-label="Explore SunBridge Digital Solutions service brand">
-            <img src="assets/sunbridge-logo.png" alt="SunBridge Digital Solutions logo">
-            <div>
-              <strong>Technology services + AI workflow development</strong>
-              <span>Support · Custom Software · Web · Digital Services</span>
-            </div>
-          </a>
-
-          <div class="project-body compact-project-body">
-            <p class="project-type">BRANDED TECHNOLOGY SERVICES</p>
-            <h3>SunBridge Digital Solutions</h3>
-            <p>A branded service offering for approachable technology support, AI workflow and lightweight custom software development, digital coaching, and web services.</p>
-          </div>
-          <a class="project-link project-cta-button" href="sunbridge.html" data-track="project_sunbridge">Explore SunBridge <span>→</span></a>
         </article>
 
         <article class="project-card compact-project opportunity-project-card reveal">
@@ -375,9 +386,6 @@
         </article>
       </div>
 
-      <div class="writings-home-cta reveal">
-        <a class="project-cta-button" href="writings.html" data-track="writings">Explore Writings <span>→</span></a>
-      </div>
     </section>
 
     <section id="contact" class="section contact-section-v262">
@@ -454,6 +462,6 @@
     <div id="project-dialog-content"></div>
   </dialog>
 
-  <script src="script.js?v=27.3"></script>
+  <script src="script.js?v=27.4"></script>
 </body>
 </html>
